@@ -1,4 +1,6 @@
-# 𝄞̷ Melody Bloom · Melody Cipher v2 prototype
+# 𝄞̷ 𝗆𝐞𝗅𝐨𝖽𝗒 · Melody Cipher & Melody Bloom
+
+September 10 private review: run `python studio.py` for the local listening room, or open `gallery.html` to compare the new same-text audio pairs. See [RELEASE_NOTES.md](RELEASE_NOTES.md) for the current changes. All four original authored Git commits are retained. The September 5 report below is preserved as historical prototype documentation; current evidence is in [VERIFICATION.md](VERIFICATION.md).
 
 Lily's text-to-music project, recovered and extended on September 5, 2026.
 

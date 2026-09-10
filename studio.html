@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Melody Bloom · local listening room</title><link rel="stylesheet" href="studio.css">
+<main><p class="eyebrow">𓂀 a message takes a breath</p><h1>♫ Melody Bloom</h1>
+<p>Exact Unicode → a small performance → verified text. Everything stays on this computer.</p>
+<section><h2>Compose</h2><label for="text">Your message · 512 UTF-8 bytes maximum</label>
+<textarea id="text" rows="4">follow the melody 𝔩̸</textarea>
+<label for="text-file">Or load a UTF-8 text file</label><input id="text-file" type="file" accept=".txt,.md">
+<div class="row"><label>Palette <select id="mode"><option value="nocturne">Nocturne · minor</option><option value="luminous">Luminous · major</option></select></label>
+<label>Tempo <input id="bpm" type="number" min="55" max="160" value="92"></label>
+<label>Phrasing <select id="phrasing"><option value="bloom">Bloom · breathing phrases</option><option value="baseline">Baseline · steady phrases</option></select></label></div>
+<button id="compose">Compose & verify audio</button><p id="status" role="status"></p>
+<audio id="player" controls></audio><p id="downloads"></p></section>
+<section><h2>Recover from sound</h2><label for="recording">WAV file · at most 50 MiB / ten minutes</label>
+<input id="recording" type="file" accept=".wav,.wave"><button id="decode">Read the waveform</button>
+<pre id="result" aria-live="polite">No recording decoded yet.</pre><details><summary>Detected notes & checks</summary><pre id="events"></pre></details></section>
+<p class="boundary">Verified means a complete v2 frame passed CRC32 and strict UTF-8. It is not encryption, authentication, or proof of microphone robustness. Missing notes are rejected, never guessed.</p>
+<p>The six legacy note palettes remain available through <code>python melody_bloom.py legacy --help</code>. They are not v2 recordings.</p></main>
+<script src="studio.js"></script></html>

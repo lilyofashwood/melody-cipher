@@ -1,0 +1,47 @@
+{
+  "source": "synthetic waveforms only",
+  "microphone_tested": false,
+  "subjective_audition": "Requires human listening; no listening judgment is claimed.",
+  "cases": [
+    {
+      "file": "melody_baseline.wav",
+      "text": "follow the melody",
+      "phrasing": "baseline",
+      "seconds": 41.27,
+      "rms_dbfs": -20.0,
+      "peak": 0.3753,
+      "checksum": "valid",
+      "audio_only": true
+    },
+    {
+      "file": "melody_bloom.wav",
+      "text": "follow the melody",
+      "phrasing": "bloom",
+      "seconds": 41.27,
+      "rms_dbfs": -20.0,
+      "peak": 0.37627,
+      "checksum": "valid",
+      "audio_only": true
+    },
+    {
+      "file": "glyphs_baseline.wav",
+      "text": "𝔩̸ 👾",
+      "phrasing": "baseline",
+      "seconds": 33.443,
+      "rms_dbfs": -20.0,
+      "peak": 0.37965,
+      "checksum": "valid",
+      "audio_only": true
+    },
+    {
+      "file": "glyphs_bloom.wav",
+      "text": "𝔩̸ 👾",
+      "phrasing": "bloom",
+      "seconds": 33.443,
+      "rms_dbfs": -20.0,
+      "peak": 0.38794,
+      "checksum": "valid",
+      "audio_only": true
+    }
+  ]
+}

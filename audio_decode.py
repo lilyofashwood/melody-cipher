@@ -20,11 +20,12 @@ from scipy.io import wavfile
 from melody_bloom import DecodeError, decode_pitches
 
 
-def read_audio(path: Path) -> tuple[int, np.ndarray]:
-    sr, values = wavfile.read(str(path))
-    if not 8000 <= sr <= 192000:
+def prepare_samples(values: np.ndarray, sr: int) -> np.ndarray:
+    """One validated boundary for both file and in-memory audio callers."""
+    if not isinstance(sr, (int, np.integer)) or not 8000 <= sr <= 192000:
         raise DecodeError('Unsupported WAV sample rate; expected 8–192 kHz.')
-    if values.size == 0 or values.ndim not in (1, 2):
+    values = np.asarray(values)
+    if values.size == 0 or values.ndim not in (1, 2) or (values.ndim == 2 and values.shape[1] > 8):
         raise DecodeError('Empty or unsupported WAV channel layout.')
     if len(values)/sr > 600:
         raise DecodeError('Audio decoding is limited to ten minutes per file.')
@@ -48,7 +49,12 @@ def read_audio(path: Path) -> tuple[int, np.ndarray]:
     divisor = math.gcd(int(sr), 22050)
     if sr != 22050:
         values = signal.resample_poly(values, 22050//divisor, sr//divisor)
-    return 22050, values
+    return values
+
+
+def read_audio(path: Path) -> tuple[int, np.ndarray]:
+    sr, values = wavfile.read(str(path))
+    return 22050, prepare_samples(values, sr)
 
 
 def _peaks(spectrum: np.ndarray, frequencies: np.ndarray, low: float,
@@ -130,11 +136,7 @@ def segment(analysis: dict, threshold: float, valley_prominence: float = .13) ->
 
 def decode_samples(samples: np.ndarray, sr: int = 22050) -> dict:
     """Try bounded acoustic segmentations, accepting only a frame with a valid CRC."""
-    if sr != 22050:
-        divisor = math.gcd(int(sr), 22050)
-        samples = signal.resample_poly(samples, 22050//divisor, sr//divisor)
-    if samples.ndim == 2:
-        samples = samples.mean(axis=1)
+    samples = prepare_samples(samples, sr)
     attempts, last_events = [], []
     for window in (2048, 1024):
         analysed = analyse(samples, 22050, window)

@@ -214,13 +214,15 @@ def _voicings(symbols: list[int], mode: str, tonic: int) -> list[int]:
 
 
 def compose(text: str, mode: str = 'nocturne', bpm: float = 92,
-            transpose: int = 0, seed: int = 7) -> dict:
+            transpose: int = 0, seed: int = 7, phrasing: str = 'bloom') -> dict:
     if mode not in MODES:
         raise ValueError('Unknown palette.')
     if not math.isfinite(bpm) or not 55 <= bpm <= 160:
         raise ValueError('Tempo must be 55..160 BPM.')
     if not isinstance(transpose, int) or not -12 <= transpose <= 12:
         raise ValueError('Transpose must be an integer in -12..12 semitones.')
+    if phrasing not in ('baseline', 'bloom'):
+        raise ValueError('Phrasing must be baseline or bloom.')
     symbols = symbols_from_bytes(pack(text))
     tonic, beat = 62 + transpose, 60 / bpm
     rng = np.random.default_rng(seed)
@@ -239,6 +241,11 @@ def compose(text: str, mode: str = 'nocturne', bpm: float = 92,
                (.5, .5, .5, .5, .75, .25, .5, .5))
     for i, pitch in enumerate(pitches):
         beats = rhythms[(i // 8) % 4][i % 8]
+        # Four-bar breathing arc. Timing is expressive, never a data channel.
+        if phrasing == 'bloom':
+            beats *= 1 + .035 * math.sin(2 * math.pi * (i % 32) / 32)
+            if i % 32 == 31 or i == len(pitches) - 1:
+                beats += .22
         slot = beat * beats
         arc = .07 * math.sin(math.pi * (i % 32) / 31)
         accent = .07 if i % 8 == 0 else (.025 if i % 2 == 0 else 0)
@@ -271,7 +278,7 @@ def compose(text: str, mode: str = 'nocturne', bpm: float = 92,
                                 arpeggio[(0, 2, 1, 3, 2, 1, 3, 2)[j]],
                                 .23 if j % 2 == 0 else .18, 'harp', 'accompaniment'))
         bar += 1
-    return {'format': 'melody-bloom-score-v2', 'mode': mode, 'bpm': bpm,
+    return {'format': 'melody-bloom-score-v2', 'mode': mode, 'bpm': bpm, 'phrasing': phrasing,
             'tonic_midi': tonic, 'seed': seed,
             'notes': [asdict(n) for n in sorted(melody + backing, key=lambda n: n.start)]}
 
