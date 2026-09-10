@@ -1,0 +1,2385 @@
+{
+  "format": "melody-bloom-score-v2",
+  "mode": "nocturne",
+  "bpm": 92,
+  "tonic_midi": 62,
+  "seed": 7,
+  "notes": [
+    {
+      "start": 0.25,
+      "duration": 0.2608695652173913,
+      "midi": 74,
+      "velocity": 0.68,
+      "voice": "lead",
+      "role": "sync"
+    },
+    {
+      "start": 0.5760869565217391,
+      "duration": 0.2608695652173913,
+      "midi": 81,
+      "velocity": 0.68,
+      "voice": "lead",
+      "role": "sync"
+    },
+    {
+      "start": 0.9021739130434783,
+      "duration": 0.2608695652173913,
+      "midi": 77,
+      "velocity": 0.68,
+      "voice": "lead",
+      "role": "sync"
+    },
+    {
+      "start": 1.2282608695652173,
+      "duration": 0.2608695652173913,
+      "midi": 79,
+      "velocity": 0.68,
+      "voice": "lead",
+      "role": "sync"
+    },
+    {
+      "start": 1.5543478260869565,
+      "duration": 0.2608695652173913,
+      "midi": 84,
+      "velocity": 0.68,
+      "voice": "lead",
+      "role": "sync"
+    },
+    {
+      "start": 1.8804347826086958,
+      "duration": 0.2608695652173913,
+      "midi": 81,
+      "velocity": 0.68,
+      "voice": "lead",
+      "role": "sync"
+    },
+    {
+      "start": 2.206521739130435,
+      "duration": 0.2608695652173913,
+      "midi": 79,
+      "velocity": 0.68,
+      "voice": "lead",
+      "role": "sync"
+    },
+    {
+      "start": 2.5326086956521743,
+      "duration": 0.2608695652173913,
+      "midi": 74,
+      "velocity": 0.68,
+      "voice": "lead",
+      "role": "sync"
+    },
+    {
+      "start": 3.1847826086956528,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.704503436797768,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 3.1847826086956528,
+      "duration": 2.282608695652174,
+      "midi": 38,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 3.1847826086956528,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 3.199782608695653,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 3.2147826086956526,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 3.2297826086956527,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 3.244782608695653,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 3.510869565217392,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.651381479374025,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 3.510869565217392,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 3.836956521739131,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 3.8369565217391313,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6790155812550331,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 4.16304347826087,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6410628774477964,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 4.16304347826087,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 4.489130434782609,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6754108961147365,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 4.489130434782609,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 4.815217391304349,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.6774190614114411,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 4.815217391304349,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 5.141304347826088,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.6771783260209961,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 5.141304347826088,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 5.467391304347826,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 5.467391304347827,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.6871602968523352,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 5.793478260869566,
+      "duration": 0.26108695652173913,
+      "midi": 81,
+      "velocity": 0.7614299945411119,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 5.793478260869566,
+      "duration": 2.282608695652174,
+      "midi": 46,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 5.793478260869566,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 5.808478260869566,
+      "duration": 2.347826086956522,
+      "midi": 58,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 5.8234782608695665,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 5.838478260869566,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 5.853478260869566,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 6.1195652173913055,
+      "duration": 0.26108695652173913,
+      "midi": 81,
+      "velocity": 0.6841999598880129,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 6.1195652173913055,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 6.445652173913045,
+      "duration": 0.4241304347826087,
+      "midi": 81,
+      "velocity": 0.7073142653901279,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 6.445652173913045,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 6.771739130434784,
+      "duration": 0.4891304347826087,
+      "midi": 58,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 6.934782608695653,
+      "duration": 0.09804347826086957,
+      "midi": 79,
+      "velocity": 0.6848696398055798,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 7.097826086956522,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.7118179544058442,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 7.097826086956523,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 7.423913043478262,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.6957881453324096,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 7.423913043478262,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 7.750000000000001,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.7243565200254541,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 7.750000000000001,
+      "duration": 0.4891304347826087,
+      "midi": 58,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.07608695652174,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.7018360601766553,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 8.07608695652174,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.402173913043478,
+      "duration": 0.4241304347826087,
+      "midi": 74,
+      "velocity": 0.7877481657056118,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 8.402173913043478,
+      "duration": 2.282608695652174,
+      "midi": 41,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.402173913043478,
+      "duration": 0.4891304347826087,
+      "midi": 52,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.417173913043479,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.432173913043478,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.447173913043478,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.462173913043479,
+      "duration": 2.347826086956522,
+      "midi": 52,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.728260869565217,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 8.891304347826088,
+      "duration": 0.09804347826086957,
+      "midi": 77,
+      "velocity": 0.709728611794663,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 9.054347826086957,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.7271638505805162,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 9.054347826086957,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 9.380434782608695,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7132452145668434,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 9.380434782608695,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 9.706521739130434,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7075974309064336,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 9.706521739130435,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 10.032608695652172,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.677172731243515,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 10.032608695652174,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 10.35869565217391,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.714405727339468,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 10.358695652173914,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 10.684782608695649,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.6643174073926483,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 10.684782608695652,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.010869565217387,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7288805638264051,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 11.010869565217392,
+      "duration": 2.282608695652174,
+      "midi": 48,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.010869565217392,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.025869565217393,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.040869565217392,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.055869565217392,
+      "duration": 2.347826086956522,
+      "midi": 55,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.070869565217393,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.336956521739125,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.6705247725864047,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 11.33695652173913,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.663043478260864,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6877545542888861,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 11.663043478260871,
+      "duration": 0.4891304347826087,
+      "midi": 55,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 11.989130434782602,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.672622949692875,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 11.98913043478261,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 12.31521739130434,
+      "duration": 0.4241304347826087,
+      "midi": 77,
+      "velocity": 0.6806075637698115,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 12.31521739130435,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 12.641304347826088,
+      "duration": 0.4891304347826087,
+      "midi": 55,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 12.80434782608695,
+      "duration": 0.09804347826086957,
+      "midi": 79,
+      "velocity": 0.6445991316837887,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 12.967391304347819,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6619692262132865,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 12.967391304347828,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 13.293478260869557,
+      "duration": 0.26108695652173913,
+      "midi": 69,
+      "velocity": 0.620910537192984,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 13.293478260869566,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 13.619565217391296,
+      "duration": 0.26108695652173913,
+      "midi": 65,
+      "velocity": 0.6824245849195302,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 13.619565217391305,
+      "duration": 2.282608695652174,
+      "midi": 38,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 13.619565217391305,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 13.634565217391305,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 13.649565217391304,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 13.664565217391305,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 13.679565217391305,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 13.945652173913034,
+      "duration": 0.26108695652173913,
+      "midi": 67,
+      "velocity": 0.6260082597225914,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 13.945652173913043,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 14.271739130434772,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6760040527579524,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 14.271739130434783,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 14.59782608695651,
+      "duration": 0.26108695652173913,
+      "midi": 69,
+      "velocity": 0.6401772606716669,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 14.597826086956522,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 14.92391304347825,
+      "duration": 0.26108695652173913,
+      "midi": 65,
+      "velocity": 0.6779082170396118,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 14.923913043478262,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 15.249999999999988,
+      "duration": 0.26108695652173913,
+      "midi": 67,
+      "velocity": 0.6461055700910504,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 15.25,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 15.576086956521726,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.7068704933294984,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 15.57608695652174,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 15.902173913043464,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6631566727087673,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 15.902173913043478,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 16.228260869565204,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7423690700703346,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 16.22826086956522,
+      "duration": 2.282608695652174,
+      "midi": 46,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 16.22826086956522,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 16.24326086956522,
+      "duration": 2.347826086956522,
+      "midi": 58,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 16.25826086956522,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 16.27326086956522,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 16.288260869565217,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 16.554347826086943,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6990462591289488,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 16.554347826086957,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 16.88043478260868,
+      "duration": 0.4241304347826087,
+      "midi": 77,
+      "velocity": 0.7147575671798958,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 16.880434782608695,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 17.206521739130437,
+      "duration": 0.4891304347826087,
+      "midi": 58,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 17.36956521739129,
+      "duration": 0.09804347826086957,
+      "midi": 72,
+      "velocity": 0.7053437266391233,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 17.53260869565216,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.7256724672602266,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 17.532608695652176,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 17.8586956521739,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.7064691524256612,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 17.858695652173914,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 18.184782608695638,
+      "duration": 0.26108695652173913,
+      "midi": 81,
+      "velocity": 0.7094866244852375,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 18.184782608695652,
+      "duration": 0.4891304347826087,
+      "midi": 58,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 18.510869565217376,
+      "duration": 0.26108695652173913,
+      "midi": 81,
+      "velocity": 0.7013913330715272,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 18.51086956521739,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 18.836956521739115,
+      "duration": 0.4241304347826087,
+      "midi": 77,
+      "velocity": 0.7701899560087863,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 18.836956521739133,
+      "duration": 2.282608695652174,
+      "midi": 41,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 18.836956521739133,
+      "duration": 0.4891304347826087,
+      "midi": 52,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 18.851956521739133,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 18.866956521739134,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 18.881956521739134,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 18.89695652173913,
+      "duration": 2.347826086956522,
+      "midi": 52,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 19.16304347826087,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 19.326086956521724,
+      "duration": 0.09804347826086957,
+      "midi": 72,
+      "velocity": 0.7125610002639116,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 19.489130434782595,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.717770904445144,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 19.48913043478261,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 19.815217391304333,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.6991772756697553,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 19.81521739130435,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 20.141304347826072,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7019793768943902,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 20.14130434782609,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 20.46739130434781,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.6853598428646188,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 20.467391304347828,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 20.79347826086955,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.7039836100509343,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 20.793478260869566,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 21.119565217391287,
+      "duration": 0.26108695652173913,
+      "midi": 81,
+      "velocity": 0.6681426853525747,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 21.119565217391305,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 21.445652173913025,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7569842455280423,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 21.445652173913043,
+      "duration": 2.282608695652174,
+      "midi": 48,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 21.445652173913043,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 21.460652173913044,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 21.475652173913044,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 21.490652173913045,
+      "duration": 2.347826086956522,
+      "midi": 55,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 21.50565217391304,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 21.771739130434764,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.6656488372324467,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 21.77173913043478,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 22.097826086956502,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7062060612159797,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 22.09782608695652,
+      "duration": 0.4891304347826087,
+      "midi": 55,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 22.42391304347824,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6608446108063143,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 22.42391304347826,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 22.74999999999998,
+      "duration": 0.4241304347826087,
+      "midi": 74,
+      "velocity": 0.6797374437460098,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 22.75,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 23.07608695652174,
+      "duration": 0.4891304347826087,
+      "midi": 55,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 23.239130434782588,
+      "duration": 0.09804347826086957,
+      "midi": 67,
+      "velocity": 0.6490587733145862,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 23.40217391304346,
+      "duration": 0.26108695652173913,
+      "midi": 69,
+      "velocity": 0.6684339913163807,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 23.402173913043477,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 23.728260869565197,
+      "duration": 0.26108695652173913,
+      "midi": 69,
+      "velocity": 0.6174283686900612,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 23.72826086956522,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 24.054347826086936,
+      "duration": 0.26108695652173913,
+      "midi": 65,
+      "velocity": 0.6978512848187747,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 24.054347826086957,
+      "duration": 2.282608695652174,
+      "midi": 38,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 24.054347826086957,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 24.069347826086958,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 24.084347826086958,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 24.09934782608696,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 24.114347826086956,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 24.380434782608674,
+      "duration": 0.26108695652173913,
+      "midi": 67,
+      "velocity": 0.6277060851649832,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 24.380434782608695,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 24.706521739130412,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6655808351379495,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 24.706521739130434,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 25.03260869565215,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6364367659896779,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 25.032608695652176,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 25.35869565217389,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6994467196956898,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 25.358695652173914,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 25.684782608695627,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.6537112827219874,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 25.684782608695652,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.010869565217366,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7011723209106417,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 26.01086956521739,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.336956521739104,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6684111967238021,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 26.336956521739133,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.663043478260843,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7642022680474205,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 26.66304347826087,
+      "duration": 2.282608695652174,
+      "midi": 46,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.66304347826087,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.67804347826087,
+      "duration": 2.347826086956522,
+      "midi": 58,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.693043478260872,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.708043478260873,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.72304347826087,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 26.98913043478258,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.6911940321658233,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 26.98913043478261,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 27.31521739130432,
+      "duration": 0.4241304347826087,
+      "midi": 72,
+      "velocity": 0.7011432673937316,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 27.315217391304348,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 27.64130434782609,
+      "duration": 0.4891304347826087,
+      "midi": 58,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 27.80434782608693,
+      "duration": 0.09804347826086957,
+      "midi": 74,
+      "velocity": 0.7052689933214359,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 27.9673913043478,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7366607834115149,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 27.967391304347828,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 28.293478260869538,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.7123064026956877,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 28.293478260869566,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 28.619565217391276,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.7267026720259018,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 28.619565217391305,
+      "duration": 0.4891304347826087,
+      "midi": 58,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 28.945652173913015,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.687146713837367,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 28.945652173913047,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 29.271739130434753,
+      "duration": 0.4241304347826087,
+      "midi": 77,
+      "velocity": 0.7588388413208336,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 29.271739130434785,
+      "duration": 2.282608695652174,
+      "midi": 41,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 29.271739130434785,
+      "duration": 0.4891304347826087,
+      "midi": 52,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 29.286739130434785,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 29.301739130434786,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 29.316739130434787,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 29.331739130434784,
+      "duration": 2.347826086956522,
+      "midi": 52,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 29.597826086956523,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 29.760869565217362,
+      "duration": 0.09804347826086957,
+      "midi": 79,
+      "velocity": 0.7145973873537707,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 29.923913043478233,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7246491518766558,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 29.92391304347826,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 30.24999999999997,
+      "duration": 0.26108695652173913,
+      "midi": 74,
+      "velocity": 0.6841425391944564,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 30.250000000000004,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 30.57608695652171,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.7316723659610249,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 30.576086956521742,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 30.90217391304345,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6945016794126418,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 30.90217391304348,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 31.228260869565187,
+      "duration": 0.26108695652173913,
+      "midi": 67,
+      "velocity": 0.712863295466696,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 31.22826086956522,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 31.554347826086925,
+      "duration": 0.26108695652173913,
+      "midi": 65,
+      "velocity": 0.6762818572067156,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 31.55434782608696,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 31.880434782608663,
+      "duration": 0.26108695652173913,
+      "midi": 69,
+      "velocity": 0.7423904639482123,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 31.880434782608695,
+      "duration": 2.282608695652174,
+      "midi": 48,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 31.880434782608695,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 31.895434782608696,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 31.910434782608696,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 31.925434782608697,
+      "duration": 2.347826086956522,
+      "midi": 55,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 31.940434782608694,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 32.2065217391304,
+      "duration": 0.26108695652173913,
+      "midi": 69,
+      "velocity": 0.6606103867131818,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 32.20652173913044,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 32.532608695652144,
+      "duration": 0.26108695652173913,
+      "midi": 65,
+      "velocity": 0.6723411996980604,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 32.53260869565217,
+      "duration": 0.4891304347826087,
+      "midi": 55,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 32.858695652173886,
+      "duration": 0.26108695652173913,
+      "midi": 67,
+      "velocity": 0.671148786949866,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 32.858695652173914,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 33.18478260869563,
+      "duration": 0.4241304347826087,
+      "midi": 72,
+      "velocity": 0.6747937064134426,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 33.18478260869565,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 33.51086956521739,
+      "duration": 0.4891304347826087,
+      "midi": 55,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 33.67391304347824,
+      "duration": 0.09804347826086957,
+      "midi": 74,
+      "velocity": 0.6458057635779006,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 33.836956521739104,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6556796616912084,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 33.83695652173913,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 34.163043478260846,
+      "duration": 0.26108695652173913,
+      "midi": 72,
+      "velocity": 0.6390476971147774,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 34.16304347826087,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 34.48913043478259,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6829070873488633,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 34.48913043478261,
+      "duration": 2.282608695652174,
+      "midi": 38,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 34.48913043478261,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 34.50413043478261,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 34.51913043478261,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 34.53413043478261,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 34.54913043478261,
+      "duration": 2.347826086956522,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 34.81521739130433,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6324804523514677,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 34.81521739130435,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 35.14130434782607,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6521835070040343,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 35.141304347826086,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 35.467391304347814,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6373795342875155,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 35.46739130434783,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 35.793478260869556,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6994222463322376,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 35.79347826086956,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 36.1195652173913,
+      "duration": 0.26108695652173913,
+      "midi": 77,
+      "velocity": 0.6696505236585623,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 36.119565217391305,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 36.44565217391304,
+      "duration": 0.26108695652173913,
+      "midi": 79,
+      "velocity": 0.6924047039266568,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 36.44565217391305,
+      "duration": 0.4891304347826087,
+      "midi": 60,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 36.77173913043478,
+      "duration": 0.26108695652173913,
+      "midi": 81,
+      "velocity": 0.6764507176753328,
+      "voice": "lead",
+      "role": "payload"
+    },
+    {
+      "start": 36.77173913043478,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.09782608695652,
+      "duration": 0.25608695652173913,
+      "midi": 81,
+      "velocity": 0.61,
+      "voice": "lead",
+      "role": "coda"
+    },
+    {
+      "start": 37.09782608695652,
+      "duration": 2.282608695652174,
+      "midi": 46,
+      "velocity": 0.4,
+      "voice": "bass",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.09782608695652,
+      "duration": 0.4891304347826087,
+      "midi": 50,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.112826086956524,
+      "duration": 2.347826086956522,
+      "midi": 58,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.127826086956524,
+      "duration": 2.347826086956522,
+      "midi": 50,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.142826086956525,
+      "duration": 2.347826086956522,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.157826086956526,
+      "duration": 2.347826086956522,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "pad",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.423913043478265,
+      "duration": 0.25608695652173913,
+      "midi": 77,
+      "velocity": 0.61,
+      "voice": "lead",
+      "role": "coda"
+    },
+    {
+      "start": 37.423913043478265,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.75,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 37.75000000000001,
+      "duration": 1.2343478260869565,
+      "midi": 74,
+      "velocity": 0.61,
+      "voice": "lead",
+      "role": "coda"
+    },
+    {
+      "start": 38.07608695652174,
+      "duration": 0.4891304347826087,
+      "midi": 58,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 38.40217391304348,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 38.72826086956522,
+      "duration": 0.4891304347826087,
+      "midi": 53,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 39.05434782608696,
+      "duration": 0.4891304347826087,
+      "midi": 58,
+      "velocity": 0.23,
+      "voice": "harp",
+      "role": "accompaniment"
+    },
+    {
+      "start": 39.380434782608695,
+      "duration": 0.4891304347826087,
+      "midi": 57,
+      "velocity": 0.18,
+      "voice": "harp",
+      "role": "accompaniment"
+    }
+  ]
+}

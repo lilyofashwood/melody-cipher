@@ -1,0 +1,20 @@
+{
+  "text": "follow the melody",
+  "checksum": "valid",
+  "mode": "luminous",
+  "tonic_pitch_class": 2,
+  "tonic": "D",
+  "preamble_note_index": 0,
+  "payload_note_count": 104,
+  "consumed_notes": 112,
+  "audio_only": true,
+  "tuning_cents": 0.08,
+  "segmentation": {
+    "window": 2048,
+    "threshold": 0.22,
+    "valley_prominence": 0.13,
+    "detected_notes": 115
+  },
+  "attempts": 1
+}
+

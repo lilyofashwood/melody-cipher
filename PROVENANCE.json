@@ -1,0 +1,33 @@
+{
+  "recovered_on": "2026-09-05",
+  "original_remembered_url": "https://github.com/lilyofashwood/melody-cipher",
+  "recovered_archive": "https://github.com/atimics/melody-cipher",
+  "snapshot": "dbeca271847f1cff7e9e97d946d8cd6c0871145d",
+  "commits_attributed_to": "lilyofashwood",
+  "files": [
+    {
+      "path": "historical/decoder.js",
+      "git_blob_sha1": "8b6a12ba494a840d9557faeda6a18993f56f5039",
+      "sha256": "4fde413b1f7b9b755420da116a5cbb8bd3d595149a1299dc3da31dba67d852d3",
+      "bytes": 3856
+    },
+    {
+      "path": "historical/index.html",
+      "git_blob_sha1": "1ac0670bc025f52f767fc98eb2c79174df7d8085",
+      "sha256": "e31e5779d34117277541fc85968f272658fc315f68153be01b908d693f5c1d9d",
+      "bytes": 9248
+    },
+    {
+      "path": "historical/melody_cipher.py",
+      "git_blob_sha1": "1a2d64b0b771bba811709bbe048e4399134b3413",
+      "sha256": "9ef94dbbc26e6fb52f638c9b00bf27011123a0c5caabd745a8fa8a69fc4c9352",
+      "bytes": 4443
+    },
+    {
+      "path": "historical/melody_cipher_cli.py",
+      "git_blob_sha1": "ce886665137acc92dfe17e46483d2087b52149ad",
+      "sha256": "71ad4077de8d808364ee6a221de17bef640c91b2fa8993defdff54988d7a01b9",
+      "bytes": 7103
+    }
+  ]
+}

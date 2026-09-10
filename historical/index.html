@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Cipher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --input-bg: #161b22;
+            --button-bg: #238636;
+            --button-hover-bg: #2ea043;
+            --border-color: #30363d;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Fira Code', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+            margin-top: 40px;
+            color: var(--accent-color);
+        }
+        .controls {
+            width: 90%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        select, textarea {
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        select {
+            width: 100%;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        button {
+            background-color: var(--button-bg);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-family: 'Fira Code', monospace;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: var(--button-hover-bg);
+        }
+        .output {
+            background-color: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 10px;
+            min-height: 80px;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .note {
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: auto;
+            margin-bottom: 20px;
+            font-size: 0.8rem;
+            color: #586069;
+        }
+    </style>
+</head>
+<body>
+    <h1>Melody Cipher</h1>
+    <div class="controls">
+        <label for="cipherSelect">Choose Cipher:</label>
+        <select id="cipherSelect">
+            <option value="chromatic">Base-12 Chromatic (“Duochroma”)</option>
+            <option value="octatonicHalfWhole">Base-8 Octatonic (Half-Whole)</option>
+            <option value="locrianPlus2">Base-8 Locrian + 2</option>
+            <option value="dorianFlat2">Base-8 Dorian ♭2 (Natural minor + Major 6)</option>
+            <option value="diminishedOctatonic">Base-8 Diminished Octatonic (Whole-Half)</option>
+            <option value="bebopMixolydian">Base-8 Jazzy Bebop Mixolydian (Major scale + ♭7)</option>
+        </select>
+        <label for="inputText">Text to encode:</label>
+        <textarea id="inputText" placeholder="Enter text to encode..."></textarea>
+        <button id="encodeBtn">Encode</button>
+        <div id="output" class="output"></div>
+    </div>
+    <footer>© 2025 Melody Cipher • Crafted with ♫ and code</footer>
+    <script>
+        // Configuration for each cipher: note names and colors
+        const cipherConfigs = {
+            chromatic: {
+                type: 'base12',
+                notes: ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"],
+                colors: {
+                    "C": "#ff5555",
+                    "C#": "#ff79c6",
+                    "D": "#bd93f9",
+                    "D#": "#8be9fd",
+                    "E": "#50fa7b",
+                    "F": "#f1fa8c",
+                    "F#": "#ffb86c",
+                    "G": "#7cc7ff",
+                    "G#": "#7df9aa",
+                    "A": "#8dc3ff",
+                    "A#": "#99c794",
+                    "B": "#f8f8f2"
+                }
+            },
+            octatonicHalfWhole: {
+                type: 'base8',
+                notes: ["E","F","G","G#","A#","B","C#","D"],
+                colors: {
+                    "E": "#FF6B6B",
+                    "F": "#FFE66D",
+                    "G": "#4ECDC4",
+                    "G#": "#556270",
+                    "A#": "#C7F464",
+                    "B": "#FF6F61",
+                    "C#": "#5E548E",
+                    "D": "#2D9CDB"
+                }
+            },
+            locrianPlus2: {
+                type: 'base8',
+                notes: ["E","F","F#","G","A","Bb","C","D"],
+                colors: {
+                    "E": "#8E44AD",
+                    "F": "#3498DB",
+                    "F#": "#1ABC9C",
+                    "G": "#E74C3C",
+                    "A": "#F39C12",
+                    "Bb": "#D4AC0D",
+                    "C": "#2ECC71",
+                    "D": "#9B59B6"
+                }
+            },
+            dorianFlat2: {
+                type: 'base8',
+                notes: ["E","F","G","A","B","C","C#","D"],
+                colors: {
+                    "E": "#E67E22",
+                    "F": "#16A085",
+                    "G": "#27AE60",
+                    "A": "#2980B9",
+                    "B": "#8E44AD",
+                    "C": "#2C3E50",
+                    "C#": "#F1C40F",
+                    "D": "#E74C3C"
+                }
+            },
+            diminishedOctatonic: {
+                type: 'base8',
+                notes: ["E","F#","G","A","A#","B","C","D#"],
+                colors: {
+                    "E": "#00BCD4",
+                    "F#": "#FF9800",
+                    "G": "#8BC34A",
+                    "A": "#9C27B0",
+                    "A#": "#03A9F4",
+                    "B": "#CDDC39",
+                    "C": "#F44336",
+                    "D#": "#FFC107"
+                }
+            },
+            bebopMixolydian: {
+                type: 'base8',
+                notes: ["E","F#","G#","A","B","C#","D","D#"],
+                colors: {
+                    "E": "#34ace0",
+                    "F#": "#33d9b2",
+                    "G#": "#ff5252",
+                    "A": "#fffa65",
+                    "B": "#2ed573",
+                    "C#": "#ff793f",
+                    "D": "#ffb142",
+                    "D#": "#706fd3"
+                }
+            }
+        };
+
+        // Encode text using base-12 mapping for all characters
+        function encodeBase12(config, text) {
+            const notes = [];
+            for (let i = 0; i < text.length; i++) {
+                const code = text.charCodeAt(i);
+                const hi = Math.floor(code / 12);
+                const lo = code % 12;
+                const note1 = config.notes[hi % config.notes.length];
+                const note2 = config.notes[lo];
+                notes.push(note1, note2);
+            }
+            return notes;
+        }
+
+        // Encode letters A-Z into two note pairs based on base-8 mapping
+        function encodeBase8(config, text) {
+            const notes = [];
+            for (let i = 0; i < text.length; i++) {
+                const ch = text[i];
+                if (/[a-zA-Z]/.test(ch)) {
+                    const idx = ch.toUpperCase().charCodeAt(0) - 65;
+                    if (idx >= 0 && idx < 26) {
+                        const hi = Math.floor(idx / 8);
+                        const lo = idx % 8;
+                        notes.push(config.notes[hi], config.notes[lo]);
+                    }
+                } else if (ch === ' ') {
+                    notes.push(' ');
+                } else if (ch === '\n') {
+ notes.push('\n');
+                }
+            }
+            return notes;
+        }
+
+        // Render notes to HTML with color-coded spans
+        function renderNotes(notes, config) {
+            return notes.map(n => {
+                if (n === ' ') {
+                    return ' ';
+                } else if (n === '\n') {
+                    return '<br>';
+                }
+                const color = config.colors[n] || '#58a6ff';
+                return '<span class="note" style="color:' + color + ';">' + n + '</span>';
+            }).join(' ');
+        }
+
+        document.getElementById('encodeBtn').addEventListener('click', () => {
+            const cipherKey = document.getElementById('cipherSelect').value;
+            const config = cipherConfigs[cipherKey];
+            const input = document.getElementById('inputText').value;
+            let notes;
+            if (config.type === 'base12') {
+                notes = encodeBase12(config, input);
+            } else {
+                notes = encodeBase8(config, input);
+            }
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = renderNotes(notes, config);
+        });
+    </script>
+</body>
+</html>
