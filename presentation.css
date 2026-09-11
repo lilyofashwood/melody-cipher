@@ -1,0 +1,6 @@
+/* Interface lettering only; literal source/result regions keep their own styling. */
+.garden-presentation{font-family:system-ui,sans-serif}
+.garden-presentation h1,.garden-presentation h2,.garden-presentation h3{line-height:1.5;overflow-wrap:anywhere}
+.garden-presentation p,.garden-presentation li,.garden-presentation label,.garden-presentation button,.garden-presentation a{overflow-wrap:anywhere}
+.garden-presentation button,.garden-presentation select{line-height:1.5}
+.garden-literal-note{font-size:12px;line-height:1.8;opacity:.8}

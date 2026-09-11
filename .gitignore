@@ -6,3 +6,4 @@ __pycache__/
 !.env.example
 output/
 *.log
+ASTRA_ULTRA_FINAL_PASS.md
