@@ -1,5 +1,5 @@
 # Static listening gallery
 
-The local studio is a Python application and cannot run on static GitHub Pages. Run `python studio.py` locally for composition/upload/verification. The original `index.html` remains the historical six-palette token demo.
+[Open the gallery](https://lilyofashwood.github.io/melody-cipher/gallery.html) to hear the same-text baseline/Bloom pairs. Every linked WAV is committed in this repository. [The six-palette workshop](https://lilyofashwood.github.io/melody-cipher/) keeps the legacy note encodings available.
 
-Pages uses the `main` branch repository root. Open `gallery.html` for the listening pairs; its relative links point only to committed synthetic WAV fixtures. The root `index.html` retains the distinct historical six-palette token demonstration. The Pages gallery does not compose, upload, or decode recordings and does not deploy the Python backend.
+Run `python studio.py` locally to compose, upload WAVs, recover messages and inspect detected notes. GitHub Pages serves the gallery from the `main` branch root; the Python listening room runs on your computer.

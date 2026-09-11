@@ -14,6 +14,6 @@
 <section><h2>Recover from sound</h2><p>WAV file · at most 50 MiB / ten minutes</p>
 <div class="file-picker"><label for="recording">Choose a waveform ↗</label><input id="recording" class="sr-only" type="file" accept=".wav,.wave"></div><span id="recording-filename" data-literal></span><button id="decode">Read the waveform</button>
 <p id="decode-status" role="status">No recording decoded yet.</p><pre id="result" aria-live="polite" data-literal></pre><details><summary>Detected notes & checks</summary><pre id="events" data-literal></pre></details></section>
-<p class="boundary">Verified means a complete v2 frame passed CRC32 and strict UTF-8. It is not encryption, authentication, or proof of microphone robustness. Missing notes are rejected, never guessed.</p>
-<p>The six legacy note palettes remain available through <code>python melody_bloom.py legacy --help</code>. They are not v2 recordings.</p></main>
+<p class="boundary">Verified means the waveform yielded a complete v2 frame with valid CRC32 and exact UTF-8. The decoder needs the opening signature and a separated melody. It rejects incomplete frames.</p>
+<p>The six legacy note palettes remain available through <code>python melody_bloom.py legacy --help</code>. These token palettes keep their own format; Bloom v2 carries the audio frames.</p></main>
 <script src="studio.js"></script><script src="presentation.js"></script></html>

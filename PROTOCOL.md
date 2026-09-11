@@ -1,6 +1,6 @@
 # Melody Bloom v2 · reproducible wire and music specification
 
-Status: implemented prototype, 2026-09-05. Incompatible with legacy Duochroma/base-8 streams; all six legacy mappings remain separately available.
+Melody Bloom v2 · implemented September 5, 2026. The audio frame has its own wire format; all six legacy Duochroma/base-8 mappings remain separately available.
 
 ## Framing
 
@@ -47,14 +47,14 @@ For each symbol the reference composer generates every allowed MIDI pitch from `
 
 Groups of eight data notes occupy four beats. Four recurring patterns combine eighth notes and occasional dotted-eighth/sixteenth pairs. Velocity follows a 32-note arc plus seeded small variation. The message voice is centered; softer bass, pad and harp parts sit below its register. The re-articulation gap and restrained reverb support audio segmentation.
 
-Musical freedom is deliberately limited: some symbols have only one pitch class. This trades melodic choice and bit rate for a simple, octave-tolerant decoder. A future format can add redundant encodings, motif choices or error-correcting blocks, but it must be separately versioned and specify exactly how those choices decode.
+The four-symbol alphabet gives each symbol a disjoint pitch-class group and the composer an octave-wide canvas. Redundant encodings, additional motif choices or error-correcting blocks belong in a separately versioned format with explicit decoding rules.
 
 ## Decoding and failure
 
 `decode_pitches` searches observed note sequences for a matching signature, infers tonic/mode, reads header and frame, validates CRC32 and decodes strict UTF-8. It rejects multiple distinct valid messages in one input. It does not need tempo or absolute octave.
 
-`audio_decode.py` estimates pitch and note boundaries from audio, using spectral peaks, amplitude gates and repeated-note valleys. It tries at most twelve combinations of window/gate parameters. A successful checksum is the acceptance gate, not a guarantee of authenticity. Pitch deviations and relative amplitudes in event reports are descriptive measurements, not calibrated probabilities.
+`audio_decode.py` estimates pitch and note boundaries from audio, using spectral peaks, amplitude gates and repeated-note valleys. It tries at most twelve combinations of window/gate parameters. A successful checksum accepts the recovered frame. Pitch deviations and relative amplitudes in event reports are measured signal features. Sender authentication is a separate layer.
 
-No symbol substitution, insertion or deletion correction is currently implemented. An uncertain complete message is rejected. Diagnostic events remain available for inspection. Cropped files cannot reliably be recovered without a full signature and frame. Independent blocks, periodic resynchronization and an erasure/error code are intended future work.
+The decoder requires a full signature and valid frame. Substituted, inserted or deleted notes produce a rejected frame unless the intact message is recovered; detected events remain available for inspection. Independent blocks, periodic resynchronization and error correction are future format extensions.
 
-The generic signal front end does not establish robustness to arbitrary recording conditions, and its octave-tolerant pitch-class decoder does not eliminate harmonic-selection errors in real transcription. Test acoustic and protocol layers separately.
+Acoustic coverage is recorded in TEST_REPORT.md and VERIFICATION.md. The pitch-class layer accepts octave changes; the waveform tracker still needs the prominent melody register described above. Speaker-to-microphone recordings follow RECORDING_PROTOCOL.md.

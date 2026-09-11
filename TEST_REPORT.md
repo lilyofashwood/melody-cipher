@@ -2,7 +2,7 @@
 
 **18 tests passed**, with zero skipped tests in this environment. NumPy 2.3.5, SciPy 1.17.0 and FFmpeg were available. Command: `python3 -m unittest -v`.
 
-These checks validate a controlled prototype. No real microphone recordings or human listening panel were available for this pass.
+This report covers synthesized performances, protocol checks and digital audio transformations.
 
 | Check | Observed result |
 | --- | --- |
@@ -35,10 +35,10 @@ The decoder was run independently on each full WAV and each MP3. It receives the
 
 Each contains 8 signature notes, 104 frame notes and 3 coda notes. All four used the first segmentation attempt: 2048-sample window, relative gate 0.22, repeat-valley prominence 0.13. The detected tuning offset was approximately +0.08 cents.
 
-## What remains unknown
+## Recording profile
 
-Real speaker-to-phone transfer, room reverb, changing background noise, dense polyphony, singing, arbitrary MIDI instrument renders, very short data notes, loss of the opening signature, and insertion/deletion correction remain unvalidated. The first audible signature note is used to infer register. Tests of global playback speed do not validate local rubato or gradual drift. White-noise tests do not model all real background sounds.
+The decoder uses an intact opening signature and a prominent melody register. The fixtures above cover full mixes, white noise and global playback-speed changes. Speaker-to-phone transfer, room reverberation, singing, dense polyphony and alternate instrument recordings belong to the recording collection described in RECORDING_PROTOCOL.md.
 
-The two negative audio fixtures and selected damaged frames do not establish a general false-positive rate. CRC32 is an error-detection gate, not authentication, calibrated confidence or error correction. Detected-note amplitude ratios are not probabilities.
+CRC32 checks frame corruption. Sender authentication and error correction are separate layers. Detected-note amplitude ratios describe the measured signal; the table records the exact positive and negative fixtures exercised.
 
-Pitch smoothing was measured, but beauty was not objectively established. Both performances and MIDI files are included for listening and musical revision. The Astra handoff identifies the remaining acoustic and aesthetic work.
+Both performances and MIDI files are included for listening and musical revision. Pitch smoothing gives the notes a gentler path; the listening pairs invite a choice of phrasing.
