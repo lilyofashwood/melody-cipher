@@ -1,4 +1,10 @@
 const $ = id => document.getElementById(id);
+// Launcher links can choose declared settings, never inject text or endpoints.
+const settings = new URLSearchParams(location.search);
+for (const id of ['mode', 'phrasing']) {
+  const requested = settings.get(id);
+  if ([...$(id).options].some(option => option.value === requested)) $(id).value = requested;
+}
 let session;
 async function post(path, body, type) {
   session ??= await fetch('/session').then(r => r.json());
@@ -9,10 +15,14 @@ async function post(path, body, type) {
 }
 $('text-file').addEventListener('change', async () => {
   const file = $('text-file').files[0];
+  $('text-filename').textContent = file?.name || '';
   if (!file) return;
   try { if (file.size > 512) throw new Error('Choose a file of at most 512 bytes.');
     $('text').value = new TextDecoder('utf-8', {fatal:true}).decode(await file.arrayBuffer());
   } catch(e) { $('status').textContent = e.message; }
+});
+$('recording').addEventListener('change', () => {
+  $('recording-filename').textContent = $('recording').files[0]?.name || '';
 });
 $('compose').addEventListener('click', async () => {
   $('compose').disabled = true; $('status').textContent = 'Composing, then decoding fresh audio…';
@@ -29,11 +39,12 @@ $('compose').addEventListener('click', async () => {
   finally { $('compose').disabled = false; }
 });
 $('decode').addEventListener('click', async () => {
-  const file = $('recording').files[0]; if (!file) { $('result').textContent = 'Choose a WAV first.'; return; }
-  if (file.size > 50*1024*1024) { $('result').textContent = 'File exceeds 50 MiB.'; return; }
-  $('decode').disabled = true; $('result').textContent = 'Listening to the waveform…'; $('events').textContent = '';
+  $('result').textContent = '';
+  const file = $('recording').files[0]; if (!file) { $('decode-status').textContent = 'Choose a WAV first.'; return; }
+  if (file.size > 50*1024*1024) { $('decode-status').textContent = 'File exceeds 50 MiB.'; return; }
+  $('decode').disabled = true; $('decode-status').textContent = 'Listening to the waveform…'; $('events').textContent = '';
   try { const r = await post('/decode', file, 'application/octet-stream');
-    $('result').textContent = 'VERIFIED · CRC32 valid\n\n'+r.text; $('events').textContent = JSON.stringify(r,null,2);
-  } catch(e) { $('result').textContent = 'REJECTED · '+e.message; }
+    $('decode-status').textContent = 'VERIFIED · CRC32 valid'; $('result').textContent = r.text; $('events').textContent = JSON.stringify(r,null,2);
+  } catch(e) { $('decode-status').textContent = 'REJECTED · '+e.message; }
   finally { $('decode').disabled = false; }
 });

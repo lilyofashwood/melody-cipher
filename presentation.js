@@ -39,6 +39,22 @@
     }
     function paint() {
       observer.disconnect();
+      // Only authored hints opt in to attribute lettering. Never touch control
+      // values, downloaded bytes, transcript text, ARIA text, or source titles.
+      for (const element of doc.querySelectorAll('[data-garden-placeholder],[data-garden-title]')) {
+        if (element.closest('[data-literal]')) continue;
+        if (element.hasAttribute('data-garden-placeholder')) {
+          const plain = element.getAttribute('placeholder') || '';
+          if (ASCII.test(plain)) {
+            accessible(element, plain.normalize('NFKC'));
+            element.setAttribute('placeholder', prose(plain));
+          }
+        }
+        if (element.hasAttribute('data-garden-title')) {
+          if (element.tagName === 'TITLE') element.textContent = prose(element.textContent);
+          else if (element.hasAttribute('title')) element.setAttribute('title', prose(element.getAttribute('title')));
+        }
+      }
       for (const element of doc.querySelectorAll('button,a,label,summary,option,h1,h2,h3,h4,h5,h6')) {
         if (element.closest(SKIP) || !ASCII.test(element.textContent)) continue;
         const plain = element.textContent.normalize('NFKC');
@@ -61,7 +77,8 @@
         const decorated = prose(node.data, voice);
         if (node.data !== decorated) node.data = decorated;
       }
-      observer.observe(doc.body, { childList: true, subtree: true, characterData: true });
+      observer.observe(doc.body, { childList: true, subtree: true, characterData: true,
+        attributes: true, attributeFilter: ['placeholder', 'title'] });
     }
     const observer = new doc.defaultView.MutationObserver(paint);
     paint();

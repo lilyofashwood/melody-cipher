@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melody Cipher</title>
+    <title data-garden-title>Melody Cipher</title>
+    <link rel="stylesheet" href="presentation.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -96,7 +97,7 @@
     <div class="controls">
         <label for="cipherSelect">Choose Cipher:</label>
         <select id="cipherSelect">
-            <option value="chromatic">Base-12 Chromatic (“Duochroma”)</option>
+            <option value="chromatic">Base-12 Chromatic (“𝖽𝐮𝐨𝖼𝗁𝗋𝐨𝗆𝐚”)</option>
             <option value="octatonicHalfWhole">Base-8 Octatonic (Half-Whole)</option>
             <option value="locrianPlus2">Base-8 Locrian + 2</option>
             <option value="dorianFlat2">Base-8 Dorian ♭2 (Natural minor + Major 6)</option>
@@ -104,12 +105,18 @@
             <option value="bebopMixolydian">Base-8 Jazzy Bebop Mixolydian (Major scale + ♭7)</option>
         </select>
         <label for="inputText">Text to encode:</label>
-        <textarea id="inputText" placeholder="Enter text to encode..."></textarea>
+        <textarea id="inputText" placeholder="Enter text to encode..." data-garden-placeholder></textarea>
         <button id="encodeBtn">Encode</button>
-        <div id="output" class="output"></div>
+        <div id="output" class="output" data-literal></div>
     </div>
     <footer>© 2025 Melody Cipher • Crafted with ♫ and code</footer>
     <script>
+        // A variant link selects only an existing palette; it never supplies a payload.
+        const requestedPalette = new URLSearchParams(location.search).get('mode');
+        const paletteControl = document.getElementById('cipherSelect');
+        if ([...paletteControl.options].some(option => option.value === requestedPalette)) {
+            paletteControl.value = requestedPalette;
+        }
         // Configuration for each cipher: note names and colors
         const cipherConfigs = {
             chromatic: {
@@ -264,5 +271,6 @@
             outputDiv.innerHTML = renderNotes(notes, config);
         });
     </script>
+    <script src="presentation.js"></script>
 </body>
 </html>

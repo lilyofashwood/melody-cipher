@@ -39,7 +39,9 @@ def handler_for(directory, token, port):
             path = urlsplit(self.path).path
             fixed = {'/': ('studio.html', 'text/html; charset=utf-8'),
                      '/studio.js': ('studio.js', 'text/javascript; charset=utf-8'),
-                     '/studio.css': ('studio.css', 'text/css; charset=utf-8')}
+                     '/studio.css': ('studio.css', 'text/css; charset=utf-8'),
+                     '/presentation.js': ('presentation.js', 'text/javascript; charset=utf-8'),
+                     '/presentation.css': ('presentation.css', 'text/css; charset=utf-8')}
             if path == '/session':
                 return self.reply(200, {'token': token})
             if path in fixed:

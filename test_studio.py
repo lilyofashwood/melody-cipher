@@ -21,6 +21,14 @@ class StudioTests(unittest.TestCase):
                 with urlopen(url) as response:
                     self.assertIn(b'Melody Bloom', response.read())
                     self.assertIn("frame-ancestors 'none'", response.headers['Content-Security-Policy'])
+                for asset in ('presentation.js', 'presentation.css'):
+                    with urlopen(url + '/' + asset) as response:
+                        self.assertEqual(response.status, 200)
+                        self.assertIn(b'garden', response.read().lower())
+                for private_path in ('/test_studio.py', '/historical/decoder.js'):
+                    with self.assertRaises(HTTPError) as error:
+                        urlopen(url + private_path)
+                    self.assertEqual(error.exception.code, 404)
                 for headers in ({'Content-Type':'application/json'},
                                 {'X-Studio-Token':'test-token','Origin':'https://untrusted.example'}):
                     with self.assertRaises(HTTPError) as error:
