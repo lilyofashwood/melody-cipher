@@ -1,31 +1,37 @@
-# 𝄞̷ 𝗆𝐞𝗅𝐨𝖽𝗒 · Melody Cipher & Melody Bloom
+<a id="̷-𝗆𝐞𝗅𝐨𝖽𝗒--melody-cipher--melody-bloom"></a>
 
-September 10 private review: run `python studio.py` for the local listening room, or open `gallery.html` to compare the new same-text audio pairs. See [RELEASE_NOTES.md](RELEASE_NOTES.md) for the current changes. All four original authored Git commits are retained. The September 5 report below is preserved as historical prototype documentation; current evidence is in [VERIFICATION.md](VERIFICATION.md).
+# 𝄞̷ 𝗆𝐞𝗅𝐨𝖽𝗒 · 𝗆𝐞𝗅𝐨𝖽𝗒 𝖼𝐢𝗉𝗁𝐞𝗋 & 𝗆𝐞𝗅𝐨𝖽𝗒 𝖻𝗅𝐨𝐨𝗆
 
-Lily's text-to-music project, recovered and extended on September 5, 2026.
+𝗌𝐞𝗉𝗍𝐞𝗆𝖻𝐞𝗋 10 𝗉𝗋𝐢𝗏𝐚𝗍𝐞 𝗋𝐞𝗏𝐢𝐞𝗐: 𝗋𝐮𝗇 `python studio.py` 𝖿𝐨𝗋 𝗍𝗁𝐞 𝗅𝐨𝖼𝐚𝗅 𝗅𝐢𝗌𝗍𝐞𝗇𝐢𝗇𝗀 𝗋𝐨𝐨𝗆, 𝐨𝗋 𝐨𝗉𝐞𝗇 `gallery.html` 𝗍𝐨 𝖼𝐨𝗆𝗉𝐚𝗋𝐞 𝗍𝗁𝐞 𝗇𝐞𝗐 𝗌𝐚𝗆𝐞-𝗍𝐞𝗑𝗍 𝐚𝐮𝖽𝐢𝐨 𝗉𝐚𝐢𝗋𝗌. 𝗌𝐞𝐞 [RELEASE_NOTES.md](RELEASE_NOTES.md) 𝖿𝐨𝗋 𝗍𝗁𝐞 𝖼𝐮𝗋𝗋𝐞𝗇𝗍 𝖼𝗁𝐚𝗇𝗀𝐞𝗌. 𝐚𝗅𝗅 𝖿𝐨𝐮𝗋 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝐚𝐮𝗍𝗁𝐨𝗋𝐞𝖽 𝗀𝐢𝗍 𝖼𝐨𝗆𝗆𝐢𝗍𝗌 𝐚𝗋𝐞 𝗋𝐞𝗍𝐚𝐢𝗇𝐞𝖽. 𝗍𝗁𝐞 𝗌𝐞𝗉𝗍𝐞𝗆𝖻𝐞𝗋 5 𝗋𝐞𝗉𝐨𝗋𝗍 𝖻𝐞𝗅𝐨𝗐 𝐢𝗌 𝗉𝗋𝐞𝗌𝐞𝗋𝗏𝐞𝖽 𝐚𝗌 𝗁𝐢𝗌𝗍𝐨𝗋𝐢𝖼𝐚𝗅 𝗉𝗋𝐨𝗍𝐨𝗍𝗒𝗉𝐞 𝖽𝐨𝖼𝐮𝗆𝐞𝗇𝗍𝐚𝗍𝐢𝐨𝗇; 𝖼𝐮𝗋𝗋𝐞𝗇𝗍 𝐞𝗏𝐢𝖽𝐞𝗇𝖼𝐞 𝐢𝗌 𝐢𝗇 [VERIFICATION.md](VERIFICATION.md).
 
-This package creates a soft pentatonic performance from exact Unicode text, exports WAV and MIDI, and recovers a complete message from a WAV or MP3 recording of the new performance. The four historical source files are preserved byte for byte in `historical/`.
+𝗅𝐢𝗅𝗒'𝗌 𝗍𝐞𝗑𝗍-𝗍𝐨-𝗆𝐮𝗌𝐢𝖼 𝗉𝗋𝐨𝗃𝐞𝖼𝗍, 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝐞𝖽 𝐚𝗇𝖽 𝐞𝗑𝗍𝐞𝗇𝖽𝐞𝖽 𝐨𝗇 𝗌𝐞𝗉𝗍𝐞𝗆𝖻𝐞𝗋 5, 2026.
 
-## Listen first
+𝗍𝗁𝐢𝗌 𝗉𝐚𝖼𝗄𝐚𝗀𝐞 𝖼𝗋𝐞𝐚𝗍𝐞𝗌 𝐚 𝗌𝐨𝖿𝗍 𝗉𝐞𝗇𝗍𝐚𝗍𝐨𝗇𝐢𝖼 𝗉𝐞𝗋𝖿𝐨𝗋𝗆𝐚𝗇𝖼𝐞 𝖿𝗋𝐨𝗆 𝐞𝗑𝐚𝖼𝗍 𝐮𝗇𝐢𝖼𝐨𝖽𝐞 𝗍𝐞𝗑𝗍, 𝐞𝗑𝗉𝐨𝗋𝗍𝗌 𝗐𝐚𝗏 𝐚𝗇𝖽 𝗆𝐢𝖽𝐢, 𝐚𝗇𝖽 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝗌 𝐚 𝖼𝐨𝗆𝗉𝗅𝐞𝗍𝐞 𝗆𝐞𝗌𝗌𝐚𝗀𝐞 𝖿𝗋𝐨𝗆 𝐚 𝗐𝐚𝗏 𝐨𝗋 𝗆𝗉3 𝗋𝐞𝖼𝐨𝗋𝖽𝐢𝗇𝗀 𝐨𝖿 𝗍𝗁𝐞 𝗇𝐞𝗐 𝗉𝐞𝗋𝖿𝐨𝗋𝗆𝐚𝗇𝖼𝐞. 𝗍𝗁𝐞 𝖿𝐨𝐮𝗋 𝗁𝐢𝗌𝗍𝐨𝗋𝐢𝖼𝐚𝗅 𝗌𝐨𝐮𝗋𝖼𝐞 𝖿𝐢𝗅𝐞𝗌 𝐚𝗋𝐞 𝗉𝗋𝐞𝗌𝐞𝗋𝗏𝐞𝖽 𝖻𝗒𝗍𝐞 𝖿𝐨𝗋 𝖻𝗒𝗍𝐞 𝐢𝗇 `historical/`.
 
-Both examples encode **follow the melody** and last approximately 41.27 seconds. The mix includes a struck, piano-like lead, low harp figures, a soft sustained accompaniment, and restrained stereo echoes. The lead is synthesized from harmonics; it is not a sampled acoustic piano.
+<a id="listen-first"></a>
 
-| Example | Sound palette | Files |
+## 𝗅𝐢𝗌𝗍𝐞𝗇 𝖿𝐢𝗋𝗌𝗍
+
+𝖻𝐨𝗍𝗁 𝐞𝗑𝐚𝗆𝗉𝗅𝐞𝗌 𝐞𝗇𝖼𝐨𝖽𝐞 **𝖿𝐨𝗅𝗅𝐨𝗐 𝗍𝗁𝐞 𝗆𝐞𝗅𝐨𝖽𝗒** 𝐚𝗇𝖽 𝗅𝐚𝗌𝗍 𝐚𝗉𝗉𝗋𝐨𝗑𝐢𝗆𝐚𝗍𝐞𝗅𝗒 41.27 𝗌𝐞𝖼𝐨𝗇𝖽𝗌. 𝗍𝗁𝐞 𝗆𝐢𝗑 𝐢𝗇𝖼𝗅𝐮𝖽𝐞𝗌 𝐚 𝗌𝗍𝗋𝐮𝖼𝗄, 𝗉𝐢𝐚𝗇𝐨-𝗅𝐢𝗄𝐞 𝗅𝐞𝐚𝖽, 𝗅𝐨𝗐 𝗁𝐚𝗋𝗉 𝖿𝐢𝗀𝐮𝗋𝐞𝗌, 𝐚 𝗌𝐨𝖿𝗍 𝗌𝐮𝗌𝗍𝐚𝐢𝗇𝐞𝖽 𝐚𝖼𝖼𝐨𝗆𝗉𝐚𝗇𝐢𝗆𝐞𝗇𝗍, 𝐚𝗇𝖽 𝗋𝐞𝗌𝗍𝗋𝐚𝐢𝗇𝐞𝖽 𝗌𝗍𝐞𝗋𝐞𝐨 𝐞𝖼𝗁𝐨𝐞𝗌. 𝗍𝗁𝐞 𝗅𝐞𝐚𝖽 𝐢𝗌 𝗌𝗒𝗇𝗍𝗁𝐞𝗌𝐢𝗓𝐞𝖽 𝖿𝗋𝐨𝗆 𝗁𝐚𝗋𝗆𝐨𝗇𝐢𝖼𝗌; 𝐢𝗍 𝐢𝗌 𝗇𝐨𝗍 𝐚 𝗌𝐚𝗆𝗉𝗅𝐞𝖽 𝐚𝖼𝐨𝐮𝗌𝗍𝐢𝖼 𝗉𝐢𝐚𝗇𝐨.
+
+| 𝐞𝗑𝐚𝗆𝗉𝗅𝐞 | 𝗌𝐨𝐮𝗇𝖽 𝗉𝐚𝗅𝐞𝗍𝗍𝐞 | 𝖿𝐢𝗅𝐞𝗌 |
 | --- | --- | --- |
-| Nocturne | D minor pentatonic; Dm7, Bbmaj7, Fmaj7 and suspended C colors | `examples/follow_the_melody_nocturne.mp3` and `.wav` |
-| Luminous | D major pentatonic; D6, Bm7, Gmaj7 and suspended A colors | `examples/follow_the_melody_luminous.mp3` and `.wav` |
+| 𝗇𝐨𝖼𝗍𝐮𝗋𝗇𝐞 | 𝖽 𝗆𝐢𝗇𝐨𝗋 𝗉𝐞𝗇𝗍𝐚𝗍𝐨𝗇𝐢𝖼; 𝖽𝗆7, 𝖻𝖻𝗆𝐚𝗃7, 𝖿𝗆𝐚𝗃7 𝐚𝗇𝖽 𝗌𝐮𝗌𝗉𝐞𝗇𝖽𝐞𝖽 𝖼 𝖼𝐨𝗅𝐨𝗋𝗌 | `examples/follow_the_melody_nocturne.mp3` 𝐚𝗇𝖽 `.wav` |
+| 𝗅𝐮𝗆𝐢𝗇𝐨𝐮𝗌 | 𝖽 𝗆𝐚𝗃𝐨𝗋 𝗉𝐞𝗇𝗍𝐚𝗍𝐨𝗇𝐢𝖼; 𝖽6, 𝖻𝗆7, 𝗀𝗆𝐚𝗃7 𝐚𝗇𝖽 𝗌𝐮𝗌𝗉𝐞𝗇𝖽𝐞𝖽 𝐚 𝖼𝐨𝗅𝐨𝗋𝗌 | `examples/follow_the_melody_luminous.mp3` 𝐚𝗇𝖽 `.wav` |
 
-Each has a separate `_lead.wav`, a `.mid` for a DAW or better instrument sounds, and a `.score.json`. `nocturne_decoded.json` and `luminous_decoded.json` contain the notes actually detected from their WAVs. Audio decoding does not read those sidecars or the MIDI files.
+𝐞𝐚𝖼𝗁 𝗁𝐚𝗌 𝐚 𝗌𝐞𝗉𝐚𝗋𝐚𝗍𝐞 `_lead.wav`, 𝐚 `.mid` 𝖿𝐨𝗋 𝐚 𝖽𝐚𝗐 𝐨𝗋 𝖻𝐞𝗍𝗍𝐞𝗋 𝐢𝗇𝗌𝗍𝗋𝐮𝗆𝐞𝗇𝗍 𝗌𝐨𝐮𝗇𝖽𝗌, 𝐚𝗇𝖽 𝐚 `.score.json`. `nocturne_decoded.json` 𝐚𝗇𝖽 `luminous_decoded.json` 𝖼𝐨𝗇𝗍𝐚𝐢𝗇 𝗍𝗁𝐞 𝗇𝐨𝗍𝐞𝗌 𝐚𝖼𝗍𝐮𝐚𝗅𝗅𝗒 𝖽𝐞𝗍𝐞𝖼𝗍𝐞𝖽 𝖿𝗋𝐨𝗆 𝗍𝗁𝐞𝐢𝗋 𝗐𝐚𝗏𝗌. 𝐚𝐮𝖽𝐢𝐨 𝖽𝐞𝖼𝐨𝖽𝐢𝗇𝗀 𝖽𝐨𝐞𝗌 𝗇𝐨𝗍 𝗋𝐞𝐚𝖽 𝗍𝗁𝐨𝗌𝐞 𝗌𝐢𝖽𝐞𝖼𝐚𝗋𝗌 𝐨𝗋 𝗍𝗁𝐞 𝗆𝐢𝖽𝐢 𝖿𝐢𝗅𝐞𝗌.
 
-## Run
+<a id="run"></a>
 
-Use Python 3.10 or newer in a virtual environment:
+## 𝗋𝐮𝗇
+
+𝐮𝗌𝐞 𝗉𝗒𝗍𝗁𝐨𝗇 3.10 𝐨𝗋 𝗇𝐞𝗐𝐞𝗋 𝐢𝗇 𝐚 𝗏𝐢𝗋𝗍𝐮𝐚𝗅 𝐞𝗇𝗏𝐢𝗋𝐨𝗇𝗆𝐞𝗇𝗍:
 
 ```sh
 python -m venv .venv
 ```
 
-Activate it with `source .venv/bin/activate` on macOS/Linux, or `.venv\Scripts\Activate.ps1` in PowerShell. Then:
+𝐚𝖼𝗍𝐢𝗏𝐚𝗍𝐞 𝐢𝗍 𝗐𝐢𝗍𝗁 `source .venv/bin/activate` 𝐨𝗇 𝗆𝐚𝖼𝐨𝗌/𝗅𝐢𝗇𝐮𝗑, 𝐨𝗋 `.venv\Scripts\Activate.ps1` 𝐢𝗇 𝗉𝐨𝗐𝐞𝗋𝗌𝗁𝐞𝗅𝗅. 𝗍𝗁𝐞𝗇:
 
 ```sh
 python -m pip install -r requirements.txt
@@ -34,68 +40,76 @@ python audio_decode.py examples/my_message.wav --events detected_notes.json
 python -m unittest -v
 ```
 
-For text containing combining marks, emoji, exact whitespace or multiple lines, a UTF-8 file avoids terminal quoting problems:
+𝖿𝐨𝗋 𝗍𝐞𝗑𝗍 𝖼𝐨𝗇𝗍𝐚𝐢𝗇𝐢𝗇𝗀 𝖼𝐨𝗆𝖻𝐢𝗇𝐢𝗇𝗀 𝗆𝐚𝗋𝗄𝗌, 𝐞𝗆𝐨𝗃𝐢, 𝐞𝗑𝐚𝖼𝗍 𝗐𝗁𝐢𝗍𝐞𝗌𝗉𝐚𝖼𝐞 𝐨𝗋 𝗆𝐮𝗅𝗍𝐢𝗉𝗅𝐞 𝗅𝐢𝗇𝐞𝗌, 𝐚 𝐮𝗍𝖿-8 𝖿𝐢𝗅𝐞 𝐚𝗏𝐨𝐢𝖽𝗌 𝗍𝐞𝗋𝗆𝐢𝗇𝐚𝗅 𝗊𝐮𝐨𝗍𝐢𝗇𝗀 𝗉𝗋𝐨𝖻𝗅𝐞𝗆𝗌:
 
 ```sh
 python melody_bloom.py encode --file message.txt --mode luminous --bpm 92 --out examples/my_message
 ```
 
-`--transpose` accepts an integer from -12 through +12 semitones. Tempo accepts 55–160 BPM; the automated audio tests do not establish equal robustness at every possible tempo and transposition. Rendering and input processing are bounded to ten minutes. Use short messages; the codec carries only two bits per melody note.
+`--transpose` 𝐚𝖼𝖼𝐞𝗉𝗍𝗌 𝐚𝗇 𝐢𝗇𝗍𝐞𝗀𝐞𝗋 𝖿𝗋𝐨𝗆 -12 𝗍𝗁𝗋𝐨𝐮𝗀𝗁 +12 𝗌𝐞𝗆𝐢𝗍𝐨𝗇𝐞𝗌. 𝗍𝐞𝗆𝗉𝐨 𝐚𝖼𝖼𝐞𝗉𝗍𝗌 55–160 𝖻𝗉𝗆; 𝗍𝗁𝐞 𝐚𝐮𝗍𝐨𝗆𝐚𝗍𝐞𝖽 𝐚𝐮𝖽𝐢𝐨 𝗍𝐞𝗌𝗍𝗌 𝖽𝐨 𝗇𝐨𝗍 𝐞𝗌𝗍𝐚𝖻𝗅𝐢𝗌𝗁 𝐞𝗊𝐮𝐚𝗅 𝗋𝐨𝖻𝐮𝗌𝗍𝗇𝐞𝗌𝗌 𝐚𝗍 𝐞𝗏𝐞𝗋𝗒 𝗉𝐨𝗌𝗌𝐢𝖻𝗅𝐞 𝗍𝐞𝗆𝗉𝐨 𝐚𝗇𝖽 𝗍𝗋𝐚𝗇𝗌𝗉𝐨𝗌𝐢𝗍𝐢𝐨𝗇. 𝗋𝐞𝗇𝖽𝐞𝗋𝐢𝗇𝗀 𝐚𝗇𝖽 𝐢𝗇𝗉𝐮𝗍 𝗉𝗋𝐨𝖼𝐞𝗌𝗌𝐢𝗇𝗀 𝐚𝗋𝐞 𝖻𝐨𝐮𝗇𝖽𝐞𝖽 𝗍𝐨 𝗍𝐞𝗇 𝗆𝐢𝗇𝐮𝗍𝐞𝗌. 𝐮𝗌𝐞 𝗌𝗁𝐨𝗋𝗍 𝗆𝐞𝗌𝗌𝐚𝗀𝐞𝗌; 𝗍𝗁𝐞 𝖼𝐨𝖽𝐞𝖼 𝖼𝐚𝗋𝗋𝐢𝐞𝗌 𝐨𝗇𝗅𝗒 𝗍𝗐𝐨 𝖻𝐢𝗍𝗌 𝗉𝐞𝗋 𝗆𝐞𝗅𝐨𝖽𝗒 𝗇𝐨𝗍𝐞.
 
-WAV input uses NumPy and SciPy. If FFmpeg is installed and on PATH, the decoder also accepts compressed audio and video files through its audio stream:
+𝗐𝐚𝗏 𝐢𝗇𝗉𝐮𝗍 𝐮𝗌𝐞𝗌 𝗇𝐮𝗆𝗉𝗒 𝐚𝗇𝖽 𝗌𝖼𝐢𝗉𝗒. 𝐢𝖿 𝖿𝖿𝗆𝗉𝐞𝗀 𝐢𝗌 𝐢𝗇𝗌𝗍𝐚𝗅𝗅𝐞𝖽 𝐚𝗇𝖽 𝐨𝗇 𝗉𝐚𝗍𝗁, 𝗍𝗁𝐞 𝖽𝐞𝖼𝐨𝖽𝐞𝗋 𝐚𝗅𝗌𝐨 𝐚𝖼𝖼𝐞𝗉𝗍𝗌 𝖼𝐨𝗆𝗉𝗋𝐞𝗌𝗌𝐞𝖽 𝐚𝐮𝖽𝐢𝐨 𝐚𝗇𝖽 𝗏𝐢𝖽𝐞𝐨 𝖿𝐢𝗅𝐞𝗌 𝗍𝗁𝗋𝐨𝐮𝗀𝗁 𝐢𝗍𝗌 𝐚𝐮𝖽𝐢𝐨 𝗌𝗍𝗋𝐞𝐚𝗆:
 
 ```sh
 python audio_decode.py examples/follow_the_melody_nocturne.mp3
 ```
 
-MP3 at 128 kbps has been tested. M4A, FLAC and MP4 rely on FFmpeg format support and have not been separately tested here. Video input uses the first default audio stream and ignores the picture. The adapter processes at most the first ten minutes.
+𝗆𝗉3 𝐚𝗍 128 𝗄𝖻𝗉𝗌 𝗁𝐚𝗌 𝖻𝐞𝐞𝗇 𝗍𝐞𝗌𝗍𝐞𝖽. 𝗆4𝐚, 𝖿𝗅𝐚𝖼 𝐚𝗇𝖽 𝗆𝗉4 𝗋𝐞𝗅𝗒 𝐨𝗇 𝖿𝖿𝗆𝗉𝐞𝗀 𝖿𝐨𝗋𝗆𝐚𝗍 𝗌𝐮𝗉𝗉𝐨𝗋𝗍 𝐚𝗇𝖽 𝗁𝐚𝗏𝐞 𝗇𝐨𝗍 𝖻𝐞𝐞𝗇 𝗌𝐞𝗉𝐚𝗋𝐚𝗍𝐞𝗅𝗒 𝗍𝐞𝗌𝗍𝐞𝖽 𝗁𝐞𝗋𝐞. 𝗏𝐢𝖽𝐞𝐨 𝐢𝗇𝗉𝐮𝗍 𝐮𝗌𝐞𝗌 𝗍𝗁𝐞 𝖿𝐢𝗋𝗌𝗍 𝖽𝐞𝖿𝐚𝐮𝗅𝗍 𝐚𝐮𝖽𝐢𝐨 𝗌𝗍𝗋𝐞𝐚𝗆 𝐚𝗇𝖽 𝐢𝗀𝗇𝐨𝗋𝐞𝗌 𝗍𝗁𝐞 𝗉𝐢𝖼𝗍𝐮𝗋𝐞. 𝗍𝗁𝐞 𝐚𝖽𝐚𝗉𝗍𝐞𝗋 𝗉𝗋𝐨𝖼𝐞𝗌𝗌𝐞𝗌 𝐚𝗍 𝗆𝐨𝗌𝗍 𝗍𝗁𝐞 𝖿𝐢𝗋𝗌𝗍 𝗍𝐞𝗇 𝗆𝐢𝗇𝐮𝗍𝐞𝗌.
 
-## What changed musically
+<a id="what-changed-musically"></a>
 
-The original project assigns a fixed pair of note names to a character. The v2 codec assigns bits to **sets of equivalent pitches**. The composer chooses among those pitches using dynamic programming, with costs for large jumps, register drift and weak chord alignment. The decoder recovers the same bits from any permitted choice.
+## 𝗐𝗁𝐚𝗍 𝖼𝗁𝐚𝗇𝗀𝐞𝖽 𝗆𝐮𝗌𝐢𝖼𝐚𝗅𝗅𝗒
 
-Four recurring rhythmic patterns, changing accents, phrase-level loudness contours, a closing cadence and low accompaniment give the sequence musical shape. Rhythm, loudness and accompaniment do not encode characters. An octave change does not alter a pitch-class symbol, so octave errors from a pitch tracker can be tolerated at the protocol layer.
+𝗍𝗁𝐞 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝗉𝗋𝐨𝗃𝐞𝖼𝗍 𝐚𝗌𝗌𝐢𝗀𝗇𝗌 𝐚 𝖿𝐢𝗑𝐞𝖽 𝗉𝐚𝐢𝗋 𝐨𝖿 𝗇𝐨𝗍𝐞 𝗇𝐚𝗆𝐞𝗌 𝗍𝐨 𝐚 𝖼𝗁𝐚𝗋𝐚𝖼𝗍𝐞𝗋. 𝗍𝗁𝐞 𝗏2 𝖼𝐨𝖽𝐞𝖼 𝐚𝗌𝗌𝐢𝗀𝗇𝗌 𝖻𝐢𝗍𝗌 𝗍𝐨 **𝗌𝐞𝗍𝗌 𝐨𝖿 𝐞𝗊𝐮𝐢𝗏𝐚𝗅𝐞𝗇𝗍 𝗉𝐢𝗍𝖼𝗁𝐞𝗌**. 𝗍𝗁𝐞 𝖼𝐨𝗆𝗉𝐨𝗌𝐞𝗋 𝖼𝗁𝐨𝐨𝗌𝐞𝗌 𝐚𝗆𝐨𝗇𝗀 𝗍𝗁𝐨𝗌𝐞 𝗉𝐢𝗍𝖼𝗁𝐞𝗌 𝐮𝗌𝐢𝗇𝗀 𝖽𝗒𝗇𝐚𝗆𝐢𝖼 𝗉𝗋𝐨𝗀𝗋𝐚𝗆𝗆𝐢𝗇𝗀, 𝗐𝐢𝗍𝗁 𝖼𝐨𝗌𝗍𝗌 𝖿𝐨𝗋 𝗅𝐚𝗋𝗀𝐞 𝗃𝐮𝗆𝗉𝗌, 𝗋𝐞𝗀𝐢𝗌𝗍𝐞𝗋 𝖽𝗋𝐢𝖿𝗍 𝐚𝗇𝖽 𝗐𝐞𝐚𝗄 𝖼𝗁𝐨𝗋𝖽 𝐚𝗅𝐢𝗀𝗇𝗆𝐞𝗇𝗍. 𝗍𝗁𝐞 𝖽𝐞𝖼𝐨𝖽𝐞𝗋 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝗌 𝗍𝗁𝐞 𝗌𝐚𝗆𝐞 𝖻𝐢𝗍𝗌 𝖿𝗋𝐨𝗆 𝐚𝗇𝗒 𝗉𝐞𝗋𝗆𝐢𝗍𝗍𝐞𝖽 𝖼𝗁𝐨𝐢𝖼𝐞.
 
-For the delivered phrase, the optimized payload's mean absolute pitch change is 2.641 semitones in Nocturne and 2.621 in Luminous. Assigning each symbol its first allowed pitch in a fixed octave gives 3.350 and 3.107 respectively. This measures smoother movement within the new codec, not a controlled comparison with the old cipher or proof of subjective beauty. Musical taste still needs listening and iteration.
+𝖿𝐨𝐮𝗋 𝗋𝐞𝖼𝐮𝗋𝗋𝐢𝗇𝗀 𝗋𝗁𝗒𝗍𝗁𝗆𝐢𝖼 𝗉𝐚𝗍𝗍𝐞𝗋𝗇𝗌, 𝖼𝗁𝐚𝗇𝗀𝐢𝗇𝗀 𝐚𝖼𝖼𝐞𝗇𝗍𝗌, 𝗉𝗁𝗋𝐚𝗌𝐞-𝗅𝐞𝗏𝐞𝗅 𝗅𝐨𝐮𝖽𝗇𝐞𝗌𝗌 𝖼𝐨𝗇𝗍𝐨𝐮𝗋𝗌, 𝐚 𝖼𝗅𝐨𝗌𝐢𝗇𝗀 𝖼𝐚𝖽𝐞𝗇𝖼𝐞 𝐚𝗇𝖽 𝗅𝐨𝗐 𝐚𝖼𝖼𝐨𝗆𝗉𝐚𝗇𝐢𝗆𝐞𝗇𝗍 𝗀𝐢𝗏𝐞 𝗍𝗁𝐞 𝗌𝐞𝗊𝐮𝐞𝗇𝖼𝐞 𝗆𝐮𝗌𝐢𝖼𝐚𝗅 𝗌𝗁𝐚𝗉𝐞. 𝗋𝗁𝗒𝗍𝗁𝗆, 𝗅𝐨𝐮𝖽𝗇𝐞𝗌𝗌 𝐚𝗇𝖽 𝐚𝖼𝖼𝐨𝗆𝗉𝐚𝗇𝐢𝗆𝐞𝗇𝗍 𝖽𝐨 𝗇𝐨𝗍 𝐞𝗇𝖼𝐨𝖽𝐞 𝖼𝗁𝐚𝗋𝐚𝖼𝗍𝐞𝗋𝗌. 𝐚𝗇 𝐨𝖼𝗍𝐚𝗏𝐞 𝖼𝗁𝐚𝗇𝗀𝐞 𝖽𝐨𝐞𝗌 𝗇𝐨𝗍 𝐚𝗅𝗍𝐞𝗋 𝐚 𝗉𝐢𝗍𝖼𝗁-𝖼𝗅𝐚𝗌𝗌 𝗌𝗒𝗆𝖻𝐨𝗅, 𝗌𝐨 𝐨𝖼𝗍𝐚𝗏𝐞 𝐞𝗋𝗋𝐨𝗋𝗌 𝖿𝗋𝐨𝗆 𝐚 𝗉𝐢𝗍𝖼𝗁 𝗍𝗋𝐚𝖼𝗄𝐞𝗋 𝖼𝐚𝗇 𝖻𝐞 𝗍𝐨𝗅𝐞𝗋𝐚𝗍𝐞𝖽 𝐚𝗍 𝗍𝗁𝐞 𝗉𝗋𝐨𝗍𝐨𝖼𝐨𝗅 𝗅𝐚𝗒𝐞𝗋.
 
-## Historical source recovery
+𝖿𝐨𝗋 𝗍𝗁𝐞 𝖽𝐞𝗅𝐢𝗏𝐞𝗋𝐞𝖽 𝗉𝗁𝗋𝐚𝗌𝐞, 𝗍𝗁𝐞 𝐨𝗉𝗍𝐢𝗆𝐢𝗓𝐞𝖽 𝗉𝐚𝗒𝗅𝐨𝐚𝖽'𝗌 𝗆𝐞𝐚𝗇 𝐚𝖻𝗌𝐨𝗅𝐮𝗍𝐞 𝗉𝐢𝗍𝖼𝗁 𝖼𝗁𝐚𝗇𝗀𝐞 𝐢𝗌 2.641 𝗌𝐞𝗆𝐢𝗍𝐨𝗇𝐞𝗌 𝐢𝗇 𝗇𝐨𝖼𝗍𝐮𝗋𝗇𝐞 𝐚𝗇𝖽 2.621 𝐢𝗇 𝗅𝐮𝗆𝐢𝗇𝐨𝐮𝗌. 𝐚𝗌𝗌𝐢𝗀𝗇𝐢𝗇𝗀 𝐞𝐚𝖼𝗁 𝗌𝗒𝗆𝖻𝐨𝗅 𝐢𝗍𝗌 𝖿𝐢𝗋𝗌𝗍 𝐚𝗅𝗅𝐨𝗐𝐞𝖽 𝗉𝐢𝗍𝖼𝗁 𝐢𝗇 𝐚 𝖿𝐢𝗑𝐞𝖽 𝐨𝖼𝗍𝐚𝗏𝐞 𝗀𝐢𝗏𝐞𝗌 3.350 𝐚𝗇𝖽 3.107 𝗋𝐞𝗌𝗉𝐞𝖼𝗍𝐢𝗏𝐞𝗅𝗒. 𝗍𝗁𝐢𝗌 𝗆𝐞𝐚𝗌𝐮𝗋𝐞𝗌 𝗌𝗆𝐨𝐨𝗍𝗁𝐞𝗋 𝗆𝐨𝗏𝐞𝗆𝐞𝗇𝗍 𝗐𝐢𝗍𝗁𝐢𝗇 𝗍𝗁𝐞 𝗇𝐞𝗐 𝖼𝐨𝖽𝐞𝖼, 𝗇𝐨𝗍 𝐚 𝖼𝐨𝗇𝗍𝗋𝐨𝗅𝗅𝐞𝖽 𝖼𝐨𝗆𝗉𝐚𝗋𝐢𝗌𝐨𝗇 𝗐𝐢𝗍𝗁 𝗍𝗁𝐞 𝐨𝗅𝖽 𝖼𝐢𝗉𝗁𝐞𝗋 𝐨𝗋 𝗉𝗋𝐨𝐨𝖿 𝐨𝖿 𝗌𝐮𝖻𝗃𝐞𝖼𝗍𝐢𝗏𝐞 𝖻𝐞𝐚𝐮𝗍𝗒. 𝗆𝐮𝗌𝐢𝖼𝐚𝗅 𝗍𝐚𝗌𝗍𝐞 𝗌𝗍𝐢𝗅𝗅 𝗇𝐞𝐞𝖽𝗌 𝗅𝐢𝗌𝗍𝐞𝗇𝐢𝗇𝗀 𝐚𝗇𝖽 𝐢𝗍𝐞𝗋𝐚𝗍𝐢𝐨𝗇.
 
-The remembered `lilyofashwood/melody-cipher` URL returned 404 through the available GitHub connection. A public archived copy survives at [atimics/melody-cipher](https://github.com/atimics/melody-cipher). Its four July 30, 2025 commits are attributed to `lilyofashwood`. This is evidence of preserved historical source; it does not establish why the original URL is unavailable or who currently owns a writable successor.
+<a id="historical-source-recovery"></a>
 
-Recovered snapshot: [`dbeca271847f1cff7e9e97d946d8cd6c0871145d`](https://github.com/atimics/melody-cipher/commit/dbeca271847f1cff7e9e97d946d8cd6c0871145d).
+## 𝗁𝐢𝗌𝗍𝐨𝗋𝐢𝖼𝐚𝗅 𝗌𝐨𝐮𝗋𝖼𝐞 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝗒
 
-| Historical file | Observed behavior |
+𝗍𝗁𝐞 𝗋𝐞𝗆𝐞𝗆𝖻𝐞𝗋𝐞𝖽 `lilyofashwood/melody-cipher` 𝐮𝗋𝗅 𝗋𝐞𝗍𝐮𝗋𝗇𝐞𝖽 404 𝗍𝗁𝗋𝐨𝐮𝗀𝗁 𝗍𝗁𝐞 𝐚𝗏𝐚𝐢𝗅𝐚𝖻𝗅𝐞 𝗀𝐢𝗍𝗁𝐮𝖻 𝖼𝐨𝗇𝗇𝐞𝖼𝗍𝐢𝐨𝗇. 𝐚 𝗉𝐮𝖻𝗅𝐢𝖼 𝐚𝗋𝖼𝗁𝐢𝗏𝐞𝖽 𝖼𝐨𝗉𝗒 𝗌𝐮𝗋𝗏𝐢𝗏𝐞𝗌 𝐚𝗍 [atimics/melody-cipher](https://github.com/atimics/melody-cipher). 𝐢𝗍𝗌 𝖿𝐨𝐮𝗋 𝗃𝐮𝗅𝗒 30, 2025 𝖼𝐨𝗆𝗆𝐢𝗍𝗌 𝐚𝗋𝐞 𝐚𝗍𝗍𝗋𝐢𝖻𝐮𝗍𝐞𝖽 𝗍𝐨 `lilyofashwood`. 𝗍𝗁𝐢𝗌 𝐢𝗌 𝐞𝗏𝐢𝖽𝐞𝗇𝖼𝐞 𝐨𝖿 𝗉𝗋𝐞𝗌𝐞𝗋𝗏𝐞𝖽 𝗁𝐢𝗌𝗍𝐨𝗋𝐢𝖼𝐚𝗅 𝗌𝐨𝐮𝗋𝖼𝐞; 𝐢𝗍 𝖽𝐨𝐞𝗌 𝗇𝐨𝗍 𝐞𝗌𝗍𝐚𝖻𝗅𝐢𝗌𝗁 𝗐𝗁𝗒 𝗍𝗁𝐞 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝐮𝗋𝗅 𝐢𝗌 𝐮𝗇𝐚𝗏𝐚𝐢𝗅𝐚𝖻𝗅𝐞 𝐨𝗋 𝗐𝗁𝐨 𝖼𝐮𝗋𝗋𝐞𝗇𝗍𝗅𝗒 𝐨𝗐𝗇𝗌 𝐚 𝗐𝗋𝐢𝗍𝐚𝖻𝗅𝐞 𝗌𝐮𝖼𝖼𝐞𝗌𝗌𝐨𝗋.
+
+𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝐞𝖽 𝗌𝗇𝐚𝗉𝗌𝗁𝐨𝗍: [`dbeca271847f1cff7e9e97d946d8cd6c0871145d`](https://github.com/atimics/melody-cipher/commit/dbeca271847f1cff7e9e97d946d8cd6c0871145d).
+
+| 𝗁𝐢𝗌𝗍𝐨𝗋𝐢𝖼𝐚𝗅 𝖿𝐢𝗅𝐞 | 𝐨𝖻𝗌𝐞𝗋𝗏𝐞𝖽 𝖻𝐞𝗁𝐚𝗏𝐢𝐨𝗋 |
 | --- | --- |
-| [melody_cipher.py](https://github.com/atimics/melody-cipher/blob/dbeca271847f1cff7e9e97d946d8cd6c0871145d/melody_cipher.py) | Six palettes: chromatic Duochroma plus five eight-note palettes; outputs note tokens. |
-| [melody_cipher_cli.py](https://github.com/atimics/melody-cipher/blob/dbeca271847f1cff7e9e97d946d8cd6c0871145d/melody_cipher_cli.py) | Adds note-token decoding. Base-8 letters use A=0 through Z=25, split into two octal digits; case is lost. |
-| [index.html](https://github.com/atimics/melody-cipher/blob/dbeca271847f1cff7e9e97d946d8cd6c0871145d/index.html) | Shows colored note names; this snapshot contains no audio playback engine or decode-button wiring. |
-| [decoder.js](https://github.com/atimics/melody-cipher/blob/dbeca271847f1cff7e9e97d946d8cd6c0871145d/decoder.js) | Expects a decode button and script inclusion that the archived HTML does not supply. |
+| [melody_cipher.py](https://github.com/atimics/melody-cipher/blob/dbeca271847f1cff7e9e97d946d8cd6c0871145d/melody_cipher.py) | 𝗌𝐢𝗑 𝗉𝐚𝗅𝐞𝗍𝗍𝐞𝗌: 𝖼𝗁𝗋𝐨𝗆𝐚𝗍𝐢𝖼 𝖽𝐮𝐨𝖼𝗁𝗋𝐨𝗆𝐚 𝗉𝗅𝐮𝗌 𝖿𝐢𝗏𝐞 𝐞𝐢𝗀𝗁𝗍-𝗇𝐨𝗍𝐞 𝗉𝐚𝗅𝐞𝗍𝗍𝐞𝗌; 𝐨𝐮𝗍𝗉𝐮𝗍𝗌 𝗇𝐨𝗍𝐞 𝗍𝐨𝗄𝐞𝗇𝗌. |
+| [melody_cipher_cli.py](https://github.com/atimics/melody-cipher/blob/dbeca271847f1cff7e9e97d946d8cd6c0871145d/melody_cipher_cli.py) | 𝐚𝖽𝖽𝗌 𝗇𝐨𝗍𝐞-𝗍𝐨𝗄𝐞𝗇 𝖽𝐞𝖼𝐨𝖽𝐢𝗇𝗀. 𝖻𝐚𝗌𝐞-8 𝗅𝐞𝗍𝗍𝐞𝗋𝗌 𝐮𝗌𝐞 A=0 𝗍𝗁𝗋𝐨𝐮𝗀𝗁 Z=25, 𝗌𝗉𝗅𝐢𝗍 𝐢𝗇𝗍𝐨 𝗍𝗐𝐨 𝐨𝖼𝗍𝐚𝗅 𝖽𝐢𝗀𝐢𝗍𝗌; 𝖼𝐚𝗌𝐞 𝐢𝗌 𝗅𝐨𝗌𝗍. |
+| [index.html](https://github.com/atimics/melody-cipher/blob/dbeca271847f1cff7e9e97d946d8cd6c0871145d/index.html) | 𝗌𝗁𝐨𝗐𝗌 𝖼𝐨𝗅𝐨𝗋𝐞𝖽 𝗇𝐨𝗍𝐞 𝗇𝐚𝗆𝐞𝗌; 𝗍𝗁𝐢𝗌 𝗌𝗇𝐚𝗉𝗌𝗁𝐨𝗍 𝖼𝐨𝗇𝗍𝐚𝐢𝗇𝗌 𝗇𝐨 𝐚𝐮𝖽𝐢𝐨 𝗉𝗅𝐚𝗒𝖻𝐚𝖼𝗄 𝐞𝗇𝗀𝐢𝗇𝐞 𝐨𝗋 𝖽𝐞𝖼𝐨𝖽𝐞-𝖻𝐮𝗍𝗍𝐨𝗇 𝗐𝐢𝗋𝐢𝗇𝗀. |
+| [decoder.js](https://github.com/atimics/melody-cipher/blob/dbeca271847f1cff7e9e97d946d8cd6c0871145d/decoder.js) | 𝐞𝗑𝗉𝐞𝖼𝗍𝗌 𝐚 𝖽𝐞𝖼𝐨𝖽𝐞 𝖻𝐮𝗍𝗍𝐨𝗇 𝐚𝗇𝖽 𝗌𝖼𝗋𝐢𝗉𝗍 𝐢𝗇𝖼𝗅𝐮𝗌𝐢𝐨𝗇 𝗍𝗁𝐚𝗍 𝗍𝗁𝐞 𝐚𝗋𝖼𝗁𝐢𝗏𝐞𝖽 𝗁𝗍𝗆𝗅 𝖽𝐨𝐞𝗌 𝗇𝐨𝗍 𝗌𝐮𝗉𝗉𝗅𝗒. |
 
-The source is genuinely pair-based. A prior conversational description using a single scale-degree modulo 7 is not the recovered implementation and should not be used as its compatibility specification.
+𝗍𝗁𝐞 𝗌𝐨𝐮𝗋𝖼𝐞 𝐢𝗌 𝗀𝐞𝗇𝐮𝐢𝗇𝐞𝗅𝗒 𝗉𝐚𝐢𝗋-𝖻𝐚𝗌𝐞𝖽. 𝐚 𝗉𝗋𝐢𝐨𝗋 𝖼𝐨𝗇𝗏𝐞𝗋𝗌𝐚𝗍𝐢𝐨𝗇𝐚𝗅 𝖽𝐞𝗌𝖼𝗋𝐢𝗉𝗍𝐢𝐨𝗇 𝐮𝗌𝐢𝗇𝗀 𝐚 𝗌𝐢𝗇𝗀𝗅𝐞 𝗌𝖼𝐚𝗅𝐞-𝖽𝐞𝗀𝗋𝐞𝐞 𝗆𝐨𝖽𝐮𝗅𝐨 7 𝐢𝗌 𝗇𝐨𝗍 𝗍𝗁𝐞 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝐞𝖽 𝐢𝗆𝗉𝗅𝐞𝗆𝐞𝗇𝗍𝐚𝗍𝐢𝐨𝗇 𝐚𝗇𝖽 𝗌𝗁𝐨𝐮𝗅𝖽 𝗇𝐨𝗍 𝖻𝐞 𝐮𝗌𝐞𝖽 𝐚𝗌 𝐢𝗍𝗌 𝖼𝐨𝗆𝗉𝐚𝗍𝐢𝖻𝐢𝗅𝐢𝗍𝗒 𝗌𝗉𝐞𝖼𝐢𝖿𝐢𝖼𝐚𝗍𝐢𝐨𝗇.
 
-Concrete old-code limitations: Duochroma wraps the high digit, which reduces code points modulo 144 in Python; for example, `é` round-trips as `Y`. JavaScript handles UTF-16 code units, so astral characters diverge further. Python base-8 encoding can throw on `ß` because uppercasing produces more than one character. The separate JavaScript fallback for punctuation can index an undefined fourth octal digit. The Python CLI can also add blank lines when encoding newlines. None of those behaviors is necessary for a sound-based decoder.
+𝖼𝐨𝗇𝖼𝗋𝐞𝗍𝐞 𝐨𝗅𝖽-𝖼𝐨𝖽𝐞 𝗅𝐢𝗆𝐢𝗍𝐚𝗍𝐢𝐨𝗇𝗌: 𝖽𝐮𝐨𝖼𝗁𝗋𝐨𝗆𝐚 𝗐𝗋𝐚𝗉𝗌 𝗍𝗁𝐞 𝗁𝐢𝗀𝗁 𝖽𝐢𝗀𝐢𝗍, 𝗐𝗁𝐢𝖼𝗁 𝗋𝐞𝖽𝐮𝖼𝐞𝗌 𝖼𝐨𝖽𝐞 𝗉𝐨𝐢𝗇𝗍𝗌 𝗆𝐨𝖽𝐮𝗅𝐨 144 𝐢𝗇 𝗉𝗒𝗍𝗁𝐨𝗇; 𝖿𝐨𝗋 𝐞𝗑𝐚𝗆𝗉𝗅𝐞, `é` 𝗋𝐨𝐮𝗇𝖽-𝗍𝗋𝐢𝗉𝗌 𝐚𝗌 `Y`. 𝗃𝐚𝗏𝐚𝗌𝖼𝗋𝐢𝗉𝗍 𝗁𝐚𝗇𝖽𝗅𝐞𝗌 𝐮𝗍𝖿-16 𝖼𝐨𝖽𝐞 𝐮𝗇𝐢𝗍𝗌, 𝗌𝐨 𝐚𝗌𝗍𝗋𝐚𝗅 𝖼𝗁𝐚𝗋𝐚𝖼𝗍𝐞𝗋𝗌 𝖽𝐢𝗏𝐞𝗋𝗀𝐞 𝖿𝐮𝗋𝗍𝗁𝐞𝗋. 𝗉𝗒𝗍𝗁𝐨𝗇 𝖻𝐚𝗌𝐞-8 𝐞𝗇𝖼𝐨𝖽𝐢𝗇𝗀 𝖼𝐚𝗇 𝗍𝗁𝗋𝐨𝗐 𝐨𝗇 `ß` 𝖻𝐞𝖼𝐚𝐮𝗌𝐞 𝐮𝗉𝗉𝐞𝗋𝖼𝐚𝗌𝐢𝗇𝗀 𝗉𝗋𝐨𝖽𝐮𝖼𝐞𝗌 𝗆𝐨𝗋𝐞 𝗍𝗁𝐚𝗇 𝐨𝗇𝐞 𝖼𝗁𝐚𝗋𝐚𝖼𝗍𝐞𝗋. 𝗍𝗁𝐞 𝗌𝐞𝗉𝐚𝗋𝐚𝗍𝐞 𝗃𝐚𝗏𝐚𝗌𝖼𝗋𝐢𝗉𝗍 𝖿𝐚𝗅𝗅𝖻𝐚𝖼𝗄 𝖿𝐨𝗋 𝗉𝐮𝗇𝖼𝗍𝐮𝐚𝗍𝐢𝐨𝗇 𝖼𝐚𝗇 𝐢𝗇𝖽𝐞𝗑 𝐚𝗇 𝐮𝗇𝖽𝐞𝖿𝐢𝗇𝐞𝖽 𝖿𝐨𝐮𝗋𝗍𝗁 𝐨𝖼𝗍𝐚𝗅 𝖽𝐢𝗀𝐢𝗍. 𝗍𝗁𝐞 𝗉𝗒𝗍𝗁𝐨𝗇 𝖼𝗅𝐢 𝖼𝐚𝗇 𝐚𝗅𝗌𝐨 𝐚𝖽𝖽 𝖻𝗅𝐚𝗇𝗄 𝗅𝐢𝗇𝐞𝗌 𝗐𝗁𝐞𝗇 𝐞𝗇𝖼𝐨𝖽𝐢𝗇𝗀 𝗇𝐞𝗐𝗅𝐢𝗇𝐞𝗌. 𝗇𝐨𝗇𝐞 𝐨𝖿 𝗍𝗁𝐨𝗌𝐞 𝖻𝐞𝗁𝐚𝗏𝐢𝐨𝗋𝗌 𝐢𝗌 𝗇𝐞𝖼𝐞𝗌𝗌𝐚𝗋𝗒 𝖿𝐨𝗋 𝐚 𝗌𝐨𝐮𝗇𝖽-𝖻𝐚𝗌𝐞𝖽 𝖽𝐞𝖼𝐨𝖽𝐞𝗋.
 
-The `legacy` command preserves all six original note palettes and valid mappings, while explicitly rejecting input that cannot be represented reversibly. It preserves spaces and newlines without the old CLI's extra blank lines:
+𝗍𝗁𝐞 `legacy` 𝖼𝐨𝗆𝗆𝐚𝗇𝖽 𝗉𝗋𝐞𝗌𝐞𝗋𝗏𝐞𝗌 𝐚𝗅𝗅 𝗌𝐢𝗑 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝗇𝐨𝗍𝐞 𝗉𝐚𝗅𝐞𝗍𝗍𝐞𝗌 𝐚𝗇𝖽 𝗏𝐚𝗅𝐢𝖽 𝗆𝐚𝗉𝗉𝐢𝗇𝗀𝗌, 𝗐𝗁𝐢𝗅𝐞 𝐞𝗑𝗉𝗅𝐢𝖼𝐢𝗍𝗅𝗒 𝗋𝐞𝗃𝐞𝖼𝗍𝐢𝗇𝗀 𝐢𝗇𝗉𝐮𝗍 𝗍𝗁𝐚𝗍 𝖼𝐚𝗇𝗇𝐨𝗍 𝖻𝐞 𝗋𝐞𝗉𝗋𝐞𝗌𝐞𝗇𝗍𝐞𝖽 𝗋𝐞𝗏𝐞𝗋𝗌𝐢𝖻𝗅𝗒. 𝐢𝗍 𝗉𝗋𝐞𝗌𝐞𝗋𝗏𝐞𝗌 𝗌𝗉𝐚𝖼𝐞𝗌 𝐚𝗇𝖽 𝗇𝐞𝗐𝗅𝐢𝗇𝐞𝗌 𝗐𝐢𝗍𝗁𝐨𝐮𝗍 𝗍𝗁𝐞 𝐨𝗅𝖽 𝖼𝗅𝐢'𝗌 𝐞𝗑𝗍𝗋𝐚 𝖻𝗅𝐚𝗇𝗄 𝗅𝐢𝗇𝐞𝗌:
 
 ```sh
 python melody_bloom.py legacy --cipher bebop_mixolydian --text "HELLO LILY"
 python melody_bloom.py legacy --cipher bebop_mixolydian --decode --text "E E"
 ```
 
-The five historical eight-note palettes retain their original labels and note arrays. Their names should not be treated as a verified music-theory taxonomy. V2 is a new, explicitly versioned format; old note sequences do not silently become v2 audio packets.
+𝗍𝗁𝐞 𝖿𝐢𝗏𝐞 𝗁𝐢𝗌𝗍𝐨𝗋𝐢𝖼𝐚𝗅 𝐞𝐢𝗀𝗁𝗍-𝗇𝐨𝗍𝐞 𝗉𝐚𝗅𝐞𝗍𝗍𝐞𝗌 𝗋𝐞𝗍𝐚𝐢𝗇 𝗍𝗁𝐞𝐢𝗋 𝐨𝗋𝐢𝗀𝐢𝗇𝐚𝗅 𝗅𝐚𝖻𝐞𝗅𝗌 𝐚𝗇𝖽 𝗇𝐨𝗍𝐞 𝐚𝗋𝗋𝐚𝗒𝗌. 𝗍𝗁𝐞𝐢𝗋 𝗇𝐚𝗆𝐞𝗌 𝗌𝗁𝐨𝐮𝗅𝖽 𝗇𝐨𝗍 𝖻𝐞 𝗍𝗋𝐞𝐚𝗍𝐞𝖽 𝐚𝗌 𝐚 𝗏𝐞𝗋𝐢𝖿𝐢𝐞𝖽 𝗆𝐮𝗌𝐢𝖼-𝗍𝗁𝐞𝐨𝗋𝗒 𝗍𝐚𝗑𝐨𝗇𝐨𝗆𝗒. 𝗏2 𝐢𝗌 𝐚 𝗇𝐞𝗐, 𝐞𝗑𝗉𝗅𝐢𝖼𝐢𝗍𝗅𝗒 𝗏𝐞𝗋𝗌𝐢𝐨𝗇𝐞𝖽 𝖿𝐨𝗋𝗆𝐚𝗍; 𝐨𝗅𝖽 𝗇𝐨𝗍𝐞 𝗌𝐞𝗊𝐮𝐞𝗇𝖼𝐞𝗌 𝖽𝐨 𝗇𝐨𝗍 𝗌𝐢𝗅𝐞𝗇𝗍𝗅𝗒 𝖻𝐞𝖼𝐨𝗆𝐞 𝗏2 𝐚𝐮𝖽𝐢𝐨 𝗉𝐚𝖼𝗄𝐞𝗍𝗌.
 
-## Audio-decoder boundary
+<a id="audio-decoder-boundary"></a>
 
-The prototype identifies the prominent melody register from the opening eight-note signature, estimates pitches with a short-time spectrum, splits repeated pitches at their attacks, and tries a bounded set of segmentations. It infers the palette, transposition and small tuning offset, reads the length, then checks CRC32 and strict UTF-8. It reports success only after the complete frame validates.
+## 𝐚𝐮𝖽𝐢𝐨-𝖽𝐞𝖼𝐨𝖽𝐞𝗋 𝖻𝐨𝐮𝗇𝖽𝐚𝗋𝗒
 
-It works on both supplied full mixes and their 128 kbps MP3 copies, without a score or known plaintext. It also passed the synthetic conditions listed in `TEST_REPORT.md`. These are controlled signal tests, not microphone recordings.
+𝗍𝗁𝐞 𝗉𝗋𝐨𝗍𝐨𝗍𝗒𝗉𝐞 𝐢𝖽𝐞𝗇𝗍𝐢𝖿𝐢𝐞𝗌 𝗍𝗁𝐞 𝗉𝗋𝐨𝗆𝐢𝗇𝐞𝗇𝗍 𝗆𝐞𝗅𝐨𝖽𝗒 𝗋𝐞𝗀𝐢𝗌𝗍𝐞𝗋 𝖿𝗋𝐨𝗆 𝗍𝗁𝐞 𝐨𝗉𝐞𝗇𝐢𝗇𝗀 𝐞𝐢𝗀𝗁𝗍-𝗇𝐨𝗍𝐞 𝗌𝐢𝗀𝗇𝐚𝗍𝐮𝗋𝐞, 𝐞𝗌𝗍𝐢𝗆𝐚𝗍𝐞𝗌 𝗉𝐢𝗍𝖼𝗁𝐞𝗌 𝗐𝐢𝗍𝗁 𝐚 𝗌𝗁𝐨𝗋𝗍-𝗍𝐢𝗆𝐞 𝗌𝗉𝐞𝖼𝗍𝗋𝐮𝗆, 𝗌𝗉𝗅𝐢𝗍𝗌 𝗋𝐞𝗉𝐞𝐚𝗍𝐞𝖽 𝗉𝐢𝗍𝖼𝗁𝐞𝗌 𝐚𝗍 𝗍𝗁𝐞𝐢𝗋 𝐚𝗍𝗍𝐚𝖼𝗄𝗌, 𝐚𝗇𝖽 𝗍𝗋𝐢𝐞𝗌 𝐚 𝖻𝐨𝐮𝗇𝖽𝐞𝖽 𝗌𝐞𝗍 𝐨𝖿 𝗌𝐞𝗀𝗆𝐞𝗇𝗍𝐚𝗍𝐢𝐨𝗇𝗌. 𝐢𝗍 𝐢𝗇𝖿𝐞𝗋𝗌 𝗍𝗁𝐞 𝗉𝐚𝗅𝐞𝗍𝗍𝐞, 𝗍𝗋𝐚𝗇𝗌𝗉𝐨𝗌𝐢𝗍𝐢𝐨𝗇 𝐚𝗇𝖽 𝗌𝗆𝐚𝗅𝗅 𝗍𝐮𝗇𝐢𝗇𝗀 𝐨𝖿𝖿𝗌𝐞𝗍, 𝗋𝐞𝐚𝖽𝗌 𝗍𝗁𝐞 𝗅𝐞𝗇𝗀𝗍𝗁, 𝗍𝗁𝐞𝗇 𝖼𝗁𝐞𝖼𝗄𝗌 𝖼𝗋𝖼32 𝐚𝗇𝖽 𝗌𝗍𝗋𝐢𝖼𝗍 𝐮𝗍𝖿-8. 𝐢𝗍 𝗋𝐞𝗉𝐨𝗋𝗍𝗌 𝗌𝐮𝖼𝖼𝐞𝗌𝗌 𝐨𝗇𝗅𝗒 𝐚𝖿𝗍𝐞𝗋 𝗍𝗁𝐞 𝖼𝐨𝗆𝗉𝗅𝐞𝗍𝐞 𝖿𝗋𝐚𝗆𝐞 𝗏𝐚𝗅𝐢𝖽𝐚𝗍𝐞𝗌.
 
-Real phone recordings, singing, dense accompaniment, long room reverberation, overlapping lead notes, unrelated opening music, MIDI rendered with arbitrary instruments, and samples missing the opening signature remain unvalidated. Existing v1 audio is not decoded by the v2 audio command. For v1, note-token decoding is available; a recording would first need trustworthy transcription and known palette/boundaries, and has no built-in CRC.
+𝐢𝗍 𝗐𝐨𝗋𝗄𝗌 𝐨𝗇 𝖻𝐨𝗍𝗁 𝗌𝐮𝗉𝗉𝗅𝐢𝐞𝖽 𝖿𝐮𝗅𝗅 𝗆𝐢𝗑𝐞𝗌 𝐚𝗇𝖽 𝗍𝗁𝐞𝐢𝗋 128 𝗄𝖻𝗉𝗌 𝗆𝗉3 𝖼𝐨𝗉𝐢𝐞𝗌, 𝗐𝐢𝗍𝗁𝐨𝐮𝗍 𝐚 𝗌𝖼𝐨𝗋𝐞 𝐨𝗋 𝗄𝗇𝐨𝗐𝗇 𝗉𝗅𝐚𝐢𝗇𝗍𝐞𝗑𝗍. 𝐢𝗍 𝐚𝗅𝗌𝐨 𝗉𝐚𝗌𝗌𝐞𝖽 𝗍𝗁𝐞 𝗌𝗒𝗇𝗍𝗁𝐞𝗍𝐢𝖼 𝖼𝐨𝗇𝖽𝐢𝗍𝐢𝐨𝗇𝗌 𝗅𝐢𝗌𝗍𝐞𝖽 𝐢𝗇 `TEST_REPORT.md`. 𝗍𝗁𝐞𝗌𝐞 𝐚𝗋𝐞 𝖼𝐨𝗇𝗍𝗋𝐨𝗅𝗅𝐞𝖽 𝗌𝐢𝗀𝗇𝐚𝗅 𝗍𝐞𝗌𝗍𝗌, 𝗇𝐨𝗍 𝗆𝐢𝖼𝗋𝐨𝗉𝗁𝐨𝗇𝐞 𝗋𝐞𝖼𝐨𝗋𝖽𝐢𝗇𝗀𝗌.
 
-For a next-stage recorder, [librosa pYIN](https://librosa.org/doc/0.11.0/generated/librosa.pyin.html) is a candidate for monophonic fundamental-frequency tracking. [Spotify Basic Pitch](https://github.com/spotify/basic-pitch) is a candidate for polyphonic note transcription; its maintainers say it works best with one instrument at a time. Neither has been integrated or benchmarked in this package. Neither alone turns arbitrary audio into a reliably decoded cipher.
+𝗋𝐞𝐚𝗅 𝗉𝗁𝐨𝗇𝐞 𝗋𝐞𝖼𝐨𝗋𝖽𝐢𝗇𝗀𝗌, 𝗌𝐢𝗇𝗀𝐢𝗇𝗀, 𝖽𝐞𝗇𝗌𝐞 𝐚𝖼𝖼𝐨𝗆𝗉𝐚𝗇𝐢𝗆𝐞𝗇𝗍, 𝗅𝐨𝗇𝗀 𝗋𝐨𝐨𝗆 𝗋𝐞𝗏𝐞𝗋𝖻𝐞𝗋𝐚𝗍𝐢𝐨𝗇, 𝐨𝗏𝐞𝗋𝗅𝐚𝗉𝗉𝐢𝗇𝗀 𝗅𝐞𝐚𝖽 𝗇𝐨𝗍𝐞𝗌, 𝐮𝗇𝗋𝐞𝗅𝐚𝗍𝐞𝖽 𝐨𝗉𝐞𝗇𝐢𝗇𝗀 𝗆𝐮𝗌𝐢𝖼, 𝗆𝐢𝖽𝐢 𝗋𝐞𝗇𝖽𝐞𝗋𝐞𝖽 𝗐𝐢𝗍𝗁 𝐚𝗋𝖻𝐢𝗍𝗋𝐚𝗋𝗒 𝐢𝗇𝗌𝗍𝗋𝐮𝗆𝐞𝗇𝗍𝗌, 𝐚𝗇𝖽 𝗌𝐚𝗆𝗉𝗅𝐞𝗌 𝗆𝐢𝗌𝗌𝐢𝗇𝗀 𝗍𝗁𝐞 𝐨𝗉𝐞𝗇𝐢𝗇𝗀 𝗌𝐢𝗀𝗇𝐚𝗍𝐮𝗋𝐞 𝗋𝐞𝗆𝐚𝐢𝗇 𝐮𝗇𝗏𝐚𝗅𝐢𝖽𝐚𝗍𝐞𝖽. 𝐞𝗑𝐢𝗌𝗍𝐢𝗇𝗀 𝗏1 𝐚𝐮𝖽𝐢𝐨 𝐢𝗌 𝗇𝐨𝗍 𝖽𝐞𝖼𝐨𝖽𝐞𝖽 𝖻𝗒 𝗍𝗁𝐞 𝗏2 𝐚𝐮𝖽𝐢𝐨 𝖼𝐨𝗆𝗆𝐚𝗇𝖽. 𝖿𝐨𝗋 𝗏1, 𝗇𝐨𝗍𝐞-𝗍𝐨𝗄𝐞𝗇 𝖽𝐞𝖼𝐨𝖽𝐢𝗇𝗀 𝐢𝗌 𝐚𝗏𝐚𝐢𝗅𝐚𝖻𝗅𝐞; 𝐚 𝗋𝐞𝖼𝐨𝗋𝖽𝐢𝗇𝗀 𝗐𝐨𝐮𝗅𝖽 𝖿𝐢𝗋𝗌𝗍 𝗇𝐞𝐞𝖽 𝗍𝗋𝐮𝗌𝗍𝗐𝐨𝗋𝗍𝗁𝗒 𝗍𝗋𝐚𝗇𝗌𝖼𝗋𝐢𝗉𝗍𝐢𝐨𝗇 𝐚𝗇𝖽 𝗄𝗇𝐨𝗐𝗇 𝗉𝐚𝗅𝐞𝗍𝗍𝐞/𝖻𝐨𝐮𝗇𝖽𝐚𝗋𝐢𝐞𝗌, 𝐚𝗇𝖽 𝗁𝐚𝗌 𝗇𝐨 𝖻𝐮𝐢𝗅𝗍-𝐢𝗇 𝖼𝗋𝖼.
 
-This is an artistic encoding, not encryption or authentication. CRC32 detects accidental corruption; it does not correct errors or prove who sent the message.
+𝖿𝐨𝗋 𝐚 𝗇𝐞𝗑𝗍-𝗌𝗍𝐚𝗀𝐞 𝗋𝐞𝖼𝐨𝗋𝖽𝐞𝗋, [𝗅𝐢𝖻𝗋𝐨𝗌𝐚 𝗉𝗒𝐢𝗇](https://librosa.org/doc/0.11.0/generated/librosa.pyin.html) 𝐢𝗌 𝐚 𝖼𝐚𝗇𝖽𝐢𝖽𝐚𝗍𝐞 𝖿𝐨𝗋 𝗆𝐨𝗇𝐨𝗉𝗁𝐨𝗇𝐢𝖼 𝖿𝐮𝗇𝖽𝐚𝗆𝐞𝗇𝗍𝐚𝗅-𝖿𝗋𝐞𝗊𝐮𝐞𝗇𝖼𝗒 𝗍𝗋𝐚𝖼𝗄𝐢𝗇𝗀. [𝗌𝗉𝐨𝗍𝐢𝖿𝗒 𝖻𝐚𝗌𝐢𝖼 𝗉𝐢𝗍𝖼𝗁](https://github.com/spotify/basic-pitch) 𝐢𝗌 𝐚 𝖼𝐚𝗇𝖽𝐢𝖽𝐚𝗍𝐞 𝖿𝐨𝗋 𝗉𝐨𝗅𝗒𝗉𝗁𝐨𝗇𝐢𝖼 𝗇𝐨𝗍𝐞 𝗍𝗋𝐚𝗇𝗌𝖼𝗋𝐢𝗉𝗍𝐢𝐨𝗇; 𝐢𝗍𝗌 𝗆𝐚𝐢𝗇𝗍𝐚𝐢𝗇𝐞𝗋𝗌 𝗌𝐚𝗒 𝐢𝗍 𝗐𝐨𝗋𝗄𝗌 𝖻𝐞𝗌𝗍 𝗐𝐢𝗍𝗁 𝐨𝗇𝐞 𝐢𝗇𝗌𝗍𝗋𝐮𝗆𝐞𝗇𝗍 𝐚𝗍 𝐚 𝗍𝐢𝗆𝐞. 𝗇𝐞𝐢𝗍𝗁𝐞𝗋 𝗁𝐚𝗌 𝖻𝐞𝐞𝗇 𝐢𝗇𝗍𝐞𝗀𝗋𝐚𝗍𝐞𝖽 𝐨𝗋 𝖻𝐞𝗇𝖼𝗁𝗆𝐚𝗋𝗄𝐞𝖽 𝐢𝗇 𝗍𝗁𝐢𝗌 𝗉𝐚𝖼𝗄𝐚𝗀𝐞. 𝗇𝐞𝐢𝗍𝗁𝐞𝗋 𝐚𝗅𝐨𝗇𝐞 𝗍𝐮𝗋𝗇𝗌 𝐚𝗋𝖻𝐢𝗍𝗋𝐚𝗋𝗒 𝐚𝐮𝖽𝐢𝐨 𝐢𝗇𝗍𝐨 𝐚 𝗋𝐞𝗅𝐢𝐚𝖻𝗅𝗒 𝖽𝐞𝖼𝐨𝖽𝐞𝖽 𝖼𝐢𝗉𝗁𝐞𝗋.
 
-## Next pass
+𝗍𝗁𝐢𝗌 𝐢𝗌 𝐚𝗇 𝐚𝗋𝗍𝐢𝗌𝗍𝐢𝖼 𝐞𝗇𝖼𝐨𝖽𝐢𝗇𝗀, 𝗇𝐨𝗍 𝐞𝗇𝖼𝗋𝗒𝗉𝗍𝐢𝐨𝗇 𝐨𝗋 𝐚𝐮𝗍𝗁𝐞𝗇𝗍𝐢𝖼𝐚𝗍𝐢𝐨𝗇. 𝖼𝗋𝖼32 𝖽𝐞𝗍𝐞𝖼𝗍𝗌 𝐚𝖼𝖼𝐢𝖽𝐞𝗇𝗍𝐚𝗅 𝖼𝐨𝗋𝗋𝐮𝗉𝗍𝐢𝐨𝗇; 𝐢𝗍 𝖽𝐨𝐞𝗌 𝗇𝐨𝗍 𝖼𝐨𝗋𝗋𝐞𝖼𝗍 𝐞𝗋𝗋𝐨𝗋𝗌 𝐨𝗋 𝗉𝗋𝐨𝗏𝐞 𝗐𝗁𝐨 𝗌𝐞𝗇𝗍 𝗍𝗁𝐞 𝗆𝐞𝗌𝗌𝐚𝗀𝐞.
 
-See `ASTRA_ULTRA_FINAL_PASS.md` for a concrete VS Code continuation. The most valuable next evidence is a small set of real speaker-to-phone recordings, followed by an audition of several renderings of the same message. The recovered archive is read-only, and no remote repository or live site was changed in this work.
+<a id="next-pass"></a>
+
+## 𝗇𝐞𝗑𝗍 𝗉𝐚𝗌𝗌
+
+𝗌𝐞𝐞 `ASTRA_ULTRA_FINAL_PASS.md` 𝖿𝐨𝗋 𝐚 𝖼𝐨𝗇𝖼𝗋𝐞𝗍𝐞 𝗏𝗌 𝖼𝐨𝖽𝐞 𝖼𝐨𝗇𝗍𝐢𝗇𝐮𝐚𝗍𝐢𝐨𝗇. 𝗍𝗁𝐞 𝗆𝐨𝗌𝗍 𝗏𝐚𝗅𝐮𝐚𝖻𝗅𝐞 𝗇𝐞𝗑𝗍 𝐞𝗏𝐢𝖽𝐞𝗇𝖼𝐞 𝐢𝗌 𝐚 𝗌𝗆𝐚𝗅𝗅 𝗌𝐞𝗍 𝐨𝖿 𝗋𝐞𝐚𝗅 𝗌𝗉𝐞𝐚𝗄𝐞𝗋-𝗍𝐨-𝗉𝗁𝐨𝗇𝐞 𝗋𝐞𝖼𝐨𝗋𝖽𝐢𝗇𝗀𝗌, 𝖿𝐨𝗅𝗅𝐨𝗐𝐞𝖽 𝖻𝗒 𝐚𝗇 𝐚𝐮𝖽𝐢𝗍𝐢𝐨𝗇 𝐨𝖿 𝗌𝐞𝗏𝐞𝗋𝐚𝗅 𝗋𝐞𝗇𝖽𝐞𝗋𝐢𝗇𝗀𝗌 𝐨𝖿 𝗍𝗁𝐞 𝗌𝐚𝗆𝐞 𝗆𝐞𝗌𝗌𝐚𝗀𝐞. 𝗍𝗁𝐞 𝗋𝐞𝖼𝐨𝗏𝐞𝗋𝐞𝖽 𝐚𝗋𝖼𝗁𝐢𝗏𝐞 𝐢𝗌 𝗋𝐞𝐚𝖽-𝐨𝗇𝗅𝗒, 𝐚𝗇𝖽 𝗇𝐨 𝗋𝐞𝗆𝐨𝗍𝐞 𝗋𝐞𝗉𝐨𝗌𝐢𝗍𝐨𝗋𝗒 𝐨𝗋 𝗅𝐢𝗏𝐞 𝗌𝐢𝗍𝐞 𝗐𝐚𝗌 𝖼𝗁𝐚𝗇𝗀𝐞𝖽 𝐢𝗇 𝗍𝗁𝐢𝗌 𝗐𝐨𝗋𝗄.
