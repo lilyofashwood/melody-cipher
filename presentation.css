@@ -41,3 +41,14 @@
   .garden-presentation audio{margin:8px 0 24px;filter:sepia(.25)}
   @media(max-width:580px){.garden-presentation main{padding:18px;margin:2vh auto}.garden-presentation section{padding:20px 16px}.garden-presentation .row{display:grid;grid-template-columns:1fr;width:100%}.garden-presentation .row select{width:100%}.garden-presentation .controls{box-sizing:border-box}}
 }
+
+/* garden-seam:start */
+.garden-seam{display:block;position:relative;box-sizing:border-box;min-width:0;max-width:62rem;margin:2rem auto;padding:1.4rem 1.5rem;border:1px solid #8b779666;border-radius:18px;background:linear-gradient(120deg,#39214622,#264b4422);color:inherit;text-align:left}
+.garden-seam h2{font:inherit;font-size:1rem;letter-spacing:.04em;margin:0 0 .75rem;color:inherit}
+.garden-seam .garden-seam-wire,.garden-seam .garden-seam-jewel{display:block;box-sizing:border-box;width:auto;min-width:0;max-width:100%;max-height:none;margin:0;padding:.65rem .2rem;border:0;background:none;box-shadow:none;color:inherit;font:500 clamp(.9rem,2.2vw,1.12rem)/2 "Noto Sans Math","Cambria Math","Apple Symbols",system-ui,sans-serif;letter-spacing:normal;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;overflow:visible}
+.garden-seam .garden-seam-jewel{font-size:1.2rem;line-height:1.7}
+.garden-seam .garden-seam-hint{margin:.75rem 0 0;font-size:.84rem;line-height:1.7;color:inherit}
+.garden-seam .garden-seam-hint a{display:inline;padding:0;border:0;background:none;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:.25em}
+@media(max-width:480px){.garden-seam{padding:1.1rem .8rem;margin:1.4rem auto}}
+@media print{.garden-seam{display:none!important}}
+/* garden-seam:end */

@@ -112,3 +112,12 @@ python melody_bloom.py legacy --cipher bebop_mixolydian --decode --text "E E"
 𝗌𝗉𝐞𝖼𝐢𝖿𝐢𝖼𝐚𝗍𝐢𝐨𝗇𝗌 𝐚𝗇𝖽 𝗅𝐨𝗀𝐢𝖼: 𝗅𝐢𝗅𝗒 𝐨𝖿 𝐚𝗌𝗁𝗐𝐨𝐨𝖽. 𝖼𝐨𝖽𝐞 𝐚𝗇𝖽 𝖽𝐞𝗌𝐢𝗀𝗇 𝖽𝐞𝗏𝐞𝗅𝐨𝗉𝐞𝖽 𝗐𝐢𝗍𝗁 𝐚𝐢 𝐚𝗌𝗌𝐢𝗌𝗍𝐚𝗇𝖼𝐞. [𝗆𝐢𝗍 𝗅𝐢𝖼𝐞𝗇𝗌𝐞𝖽](LICENSE) · 𝖼𝐨𝗉𝗒𝗋𝐢𝗀𝗁𝗍 © 2026 `lilyofashwood`.
 
 ∿ 𝗍𝗁𝐞 𝗅𝐞𝗍𝗍𝐞𝗋 𝗅𝐞𝐚𝗏𝐞𝗌 𝖻𝗒 𝗍𝗁𝐞 𝗐𝐢𝗇𝖽𝐨𝗐; 𝗍𝗁𝐞 𝗆𝐞𝗅𝐨𝖽𝗒 𝖻𝗋𝐢𝗇𝗀𝗌 𝐢𝗍 𝗁𝐨𝗆𝐞 ∿
+
+<!-- garden-seam:melody-cipher:start -->
+<section class="garden-seam" data-garden-seam="melody-cipher" aria-label="A seam in the garden">
+<h2>⟡ 𝐚 𝗌𝐞𝐚𝗆 𝐢𝗇 𝗍𝗁𝐞 𝗀𝐚𝗋𝖽𝐞𝗇 ⟡</h2>
+<pre class="garden-seam-wire literal" data-garden-raw data-literal>𝘀͏̍︎⃝͏̥︎⃤͏͗︎҉͏̩︎⃝͏̍𝗶︎⃝͏̩︎⃝͏̍︎⃝͏̩︎⃝͏̍︎҈𝗻͏̩︎⃝͏̍︎҈͏̩︎҈͏̍︎⃒͏̩𝗴︎⃪͏̍︎⃝͏̩︎⃒͏̍︎⃒͏̩︎⃥ ͏̍︎҈͏̹︎⃞͏͆︎⃒͏̥︎⃤͏̑𝗐︎⃪͏̮︎⃫͏̍︎⃝͏̪︎⃒͏̎︎̸𝗁͏̹︎⃞͏͆︎⃒︎҉︎҈︎⃝︎⃞︎̸𝖾︎⃒︎⃞︎⃤︎҉︎⃞︎̸︎⃪𝗋𝖾 𝗍𝗁𝖾 𝗊𝗎𝗂𝖾𝗍 𝗄𝖾𝖾𝗉𝗌 𝗂𝗍𝗌 𝗄𝖾𝗒𝗌
+𝖺 𝗇𝗈𝗍𝖾 𝖼𝖺𝗇 𝗁𝗈𝗅𝖽 𝖺 𝗅𝗂𝗍𝗍𝗅𝖾 𝗁𝗈𝗎𝗌𝖾󠅔󠅨󠅥󠅳󠅥󠄠󠅬󠅥󠅴󠅴󠅥󠅲󠅳󠄠󠅡󠅲󠅥󠄠󠅡󠄠󠅭󠅡󠅲󠅧󠅩󠅮󠄠󠅰󠅯󠅥󠅭󠄮󠄠󠅔󠅨󠅥󠄠󠅬󠅩󠅳󠅴󠅥󠅮󠅩󠅮󠅧󠄠󠅲󠅯󠅯󠅭󠄠󠅮󠅥󠅸󠅴󠄠󠅤󠅯󠅯󠅲󠄠󠅣󠅡󠅲󠅲󠅩󠅥󠅳󠄠󠅴󠅨󠅥󠄠󠅳󠅯󠅮󠅧󠄮</pre>
+<p class="garden-seam-hint"><a href="https://lilyofashwood.github.io/font-garden/seams/#melody-cipher" aria-label="Unfold this garden seam">𝐮𝗇𝖿𝐨𝗅𝖽 𝗍𝗁𝐞 𝗌𝐞𝐚𝗆 ↗</a></p>
+</section>
+<!-- garden-seam:melody-cipher:end -->
